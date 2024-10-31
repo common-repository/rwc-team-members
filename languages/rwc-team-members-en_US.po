@@ -1,0 +1,2018 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RWC Team Members\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-11 22:03+0000\n"
+"PO-Revision-Date: 2024-06-09 02:12+0000\n"
+"Last-Translator: Iftekhar Alam\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.2\n"
+"X-Domain: rwc-team-members"
+
+#: options/global-settings.php:86
+#, php-format
+msgid ""
+"\n"
+"\t\t\t\t\t\t\t\tEnter <a class=\"global-link\" href=\"%1s\" "
+"target=\"_blank\">Google Fonts</a> URL link<a href=\"%2s\" "
+"class=\"rwctm_tooltip dashicons dashicons-info\" rel=\"If you want your "
+"website to stand out from the others, then using custom fonts like Google "
+"Fonts will get you there. Google Web Designer lets you select a font from a "
+"list of common fonts or from Google Fonts. You can use hundreds of open-"
+"source fonts available through Google Fonts at no cost.\"><span "
+"class=\"rwctm_ttarrow\"></span></a><span class=\"dashicons dashicons-"
+"megaphone\"></span><a href=\"%3s\" class=\"rwctm_tooltip rwctm_note\" "
+"rel=\"Find a Google font that you'd like to use on your team. When you find "
+"the font that you like, click on the 'Plus' icon at the right. After "
+"clicking on the plus icon a popup window will appear from right named as "
+"Selected family. Add more font if you want. After adding all the fonts, in "
+"the 'Use on the web' section you will find generated links. You don't need "
+"to copy the whole code. You just need to add an URL link without http: or "
+"https: (e.g. //fonts.googleapis.com/css?family=Roboto+Condensed:400,700).\">"
+"<i class=\"attention\" title=\"Add a font from Google Fonts\"></i></a>"
+msgstr ""
+
+#: inc/rwctm-guide.php:29
+#, php-format
+msgid ""
+"\n"
+"\t\t\t\t\t\tTo see the full documentation, please click on the following "
+"link: <strong><a href=\"%s\" target=\"_blank\">Documentation</a></strong>."
+msgstr ""
+
+#: inc/process-team.php:159
+#, php-format
+msgid ""
+"\n"
+"\t\t\t\t\t<h3>About Version 0.1</h3>\n"
+"\t\t\t\t\t<p><strong>Please read the following information carefully:"
+"</strong></p>\n"
+"\t\t\t\t\t<blockquote>\n"
+"\t\t\t\t\t\t<p>In the <strong>General Settings</strong> for each team, "
+"you'll find a crucial feature: <strong>Shortcode Post/Page URLs</strong>. "
+"It's vital to add the page URL of the team's display location. This ensures "
+"your team displays correctly based on its settings. This step keeps your "
+"Custom CSS file tailored to the team, leading to faster loading and a more "
+"streamlined look. This setting is pivotal - without it, your customization "
+"won't take effect. Make sure to implement this feature to achieve the "
+"desired team display and style.</p>\n"
+"\t\t\t\t\t\t<cite>%1$s <span class=\"cite-last-name\">%2$s</span></cite>\n"
+"\t\t\t\t\t\t<div class=\"blockquote-author-image\"></div>\n"
+"\t\t\t\t\t</blockquote>\n"
+"\t\t\t\t\t<p>There is a <a href=\"%3$s\">YouTube video</a> available that "
+"explains how the Team Members plugin works. If you have any trouble "
+"understanding, feel free to <a href=\"%4$s\" target=\"_blank\">Contact Us</a>"
+" at any time.</p>\n"
+"\t\t\t\t\t<p class=\"likeit\">We greatly value your feedback! Please spare a "
+"moment to rate your recent experience with our products/services. Your input "
+"is highly appreciated and helps us improve. Thank you for your support!<a "
+"target=\"_blank\" href=\"%5$s\">&#9733;&#9733;&#9733;&#9733;&#9733;</a></p>"
+msgstr ""
+
+#: inc/rwctm-guide.php:37
+#, php-format
+msgid ""
+"\n"
+"\t\t\t\t\tThank you for selecting our plugin! We deeply appreciate your "
+"feedback and are committed to offering you top-notch support. Need more help "
+"beyond this guide? Our team is ready to assist you through the <a "
+"href=\"%1s\" target=\"_blank\">WordPress Support Threads</a>. Your "
+"satisfaction is paramount, and we're here to exceed your expectations. If "
+"you find our plugin valuable, kindly consider leaving a stellar <a "
+"target=\"_blank\" href=\"%2s\">★★★★★</a> review. Your support truly matters "
+"to us!"
+msgstr ""
+
+#: inc/process-team.php:144
+#, php-format
+msgid ""
+"\n"
+"\t\t\t\t\tWelcome to our plugin, %1$s! It looks like you haven't added any "
+"teams yet. Don't worry, we've got you covered! Just click on the <a "
+"href=\"%2$s\"><strong>Add Template</strong></a> button to get started. "
+"You'll find 10 ready-made templates to choose from. Simply select one and "
+"click on the <strong>Create Team</strong> button to instantly create your "
+"team!<br /><br />If you have any questions or need further assistance beyond "
+"what's covered in the help <a href=\"%3$s\"><strong>page</strong></a>, "
+"please don't hesitate to <a href=\"%4$s\" target=\"_blank\"><strong>contact "
+"us</strong></a> via the WordPress support thread. We're here to provide you "
+"with the support you need."
+msgstr ""
+
+#: layout/layout-one.php:295 layout/layout-three.php:432
+#: layout/layout-two.php:496
+#, php-format
+msgid ""
+"\n"
+"\t\t\t\t<div class=\"rwctm_notice error\">Your team's display option is "
+"currently inactive! This means your team members aren't visible. To change "
+"this, follow these steps:</div>\n"
+"\t\t\t\t<div class=\"rwctm_notice warning\">\n"
+"\t\t\t\t\t<ol>\n"
+"\t\t\t\t\t\t<li>Go to <strong>RWC Teams</strong> in your WordPress dashboard."
+"</li>\n"
+"\t\t\t\t\t\t<li>Hover your mouse cursor over the team name you wish to work "
+"on.</li>\n"
+"\t\t\t\t\t\t<li>Click on <strong>Edit Members</strong>. This will take you "
+"to the team editing page.</li>\n"
+"\t\t\t\t\t\t<li>Scroll down to the <strong>General</strong> tab under "
+"<strong>Team Member Settings</strong>.</li>\n"
+"\t\t\t\t\t\t<li>Enable the option <strong>Enable Team</strong> to proudly "
+"showcase your team members on your page.</li>\n"
+"\t\t\t\t\t</ol>\n"
+"\t\t\t\t</div>\n"
+"\t\t\t\t<p class=\"rwctm_notice info\">If you need any help, our support "
+"team is <a href=\"%s\" target=\"_blank\"><strong>here</strong></a> for you. "
+"Thank you for choosing the RWC Team Members plugin to enhance your team's "
+"presence!</p>"
+msgstr ""
+
+#: layout/layout-one.php:36 layout/layout-three.php:36 layout/layout-two.php:36
+#, php-format
+msgid ""
+"\n"
+"\t\t\t\t<div class=\"rwctm_notice warning\">To ensure proper display and "
+"styling of your team, go to the team <a href=\"%1s\" target=\"_blank\">"
+"<strong>lists page</strong></a>. Mouseover the team name, click on <strong>"
+"Edit Members</strong>, and scroll down to the <strong>General "
+"Settings</strong> tab. Locate the <strong>Shortcode Post/Page URLs</strong> "
+"section and paste the page URL (<strong>%2s</strong>) there. Update the "
+"settings to achieve the desired team display and style.</div>"
+msgstr ""
+
+#: inc/process-team.php:181
+msgid ""
+"\n"
+"\t\t\t\t<h3>Code Usage Instruction</h3>\n"
+"\t\t\t\t<p class=\"rwctm-first\">To display a team shortcode in a WordPress "
+"post or page, you need to access the post or page editor in the WordPress "
+"dashboard. Here's how:</p>\n"
+"\t\t\t\t<ol>\n"
+"\t\t\t\t\t<li>Go to Posts or Pages, depending on where you want to display "
+"the team.</li>\n"
+"\t\t\t\t\t<li>Either create a new post or page, or edit an existing one.</li>"
+"\n"
+"\t\t\t\t\t<li>Switch to the visual editor if it's not already active.</li>\n"
+"\t\t\t\t\t<li>Locate the spot in the post or page where you want to display "
+"the team.</li>\n"
+"\t\t\t\t\t<li>Paste the following shortcode into the editor:\n"
+"\t\t\t\t\t\t<pre><code>[rwc-team-members</span> <span class=\"rwctm-"
+"built_in\">id</span>=<span class=\"rwctm-string\">\"SHORTCODE_ID\"</span>]"
+"</code></pre>\n"
+"\t\t\t\t\t\tReplace \"SHORTCODE_ID\" with the actual id of the team that you "
+"want to display.\n"
+"\t\t\t\t\t</li>\n"
+"\t\t\t\t\t<li>Save or publish the post or page.</li>\n"
+"\t\t\t\t</ol>\n"
+"\t\t\t\t<p>Once you've saved or published the post or page, the team "
+"shortcode will be processed and the team will be displayed on the front end "
+"of your site.</p>"
+msgstr ""
+
+#: inc/team-sidebar.php:33
+#, php-format
+msgid ""
+"\n"
+"                    <h3>Plugin Info</h3>\n"
+"                    <ul class=\"rwctmusage-list\">\n"
+"                        <li>RWC Team Members</li>\n"
+"                        <li>Version: 0.4</li>\n"
+"                        <li>Scripts: PHP + CSS + JS</li>\n"
+"                        <li>Requires: Wordpress 5.0</li>\n"
+"                        <li>First Released: 14 March, 2024</li>\n"
+"                        <li>Last Updated: 9 June, 2024</li>\n"
+"                        <li>By: <a href=\"%1s\" target=\"_blank\">"
+"Realwebcare</a></li>\n"
+"                        <li>Facebook Page: <a href=\"%2s\" target=\"_blank\">"
+"Realwebcare</a></li>\n"
+"                        <li>Need Help? <a href=\"%3s\" target=\"_blank\">"
+"Support</a></li>\n"
+"                        <li>Like it? Please leave us a <a target=\"_blank\" "
+"href=\"%4s\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> rating. We highly "
+"appreciate your support!</li>\n"
+"                    </ul>"
+msgstr ""
+
+#: options/team-settings.php:1076
+msgid " Collapse all"
+msgstr ""
+
+#: options/team-settings.php:1075
+msgid " Expand all"
+msgstr ""
+
+#: options/team-settings.php:1004
+msgid "#000000"
+msgstr ""
+
+#: options/team-settings.php:1051
+msgid "#1d233b"
+msgstr ""
+
+#: options/team-settings.php:1041
+msgid "#354664"
+msgstr ""
+
+#: options/team-settings.php:1031
+msgid "#e9ecef"
+msgstr ""
+
+#: options/team-settings.php:1014
+msgid "#ffc107"
+msgstr ""
+
+#: options/team-settings.php:1061
+msgid "#ffffff"
+msgstr ""
+
+#: options/global-settings.php:101 options/team-settings.php:817
+msgid "'Open Sans', sans-serif"
+msgstr ""
+
+#: options/global-settings.php:97 options/team-settings.php:807
+msgid "'Roboto Condensed', serif"
+msgstr ""
+
+#: options/global-settings.php:263
+msgid "(Maximum size: 450 MB)"
+msgstr ""
+
+#: options/activity-settings.php:168
+msgid "*** You can reorder activity by dragging with the mouse ***"
+msgstr ""
+
+#: options/global-settings.php:93
+msgid "//fonts.googleapis.com/css?family=Roboto+Condensed:400,700"
+msgstr ""
+
+#: options/team-settings.php:309 options/team-settings.php:461
+msgid "1"
+msgstr ""
+
+#: options/team-settings.php:349 options/team-settings.php:359
+#: options/team-settings.php:365
+msgid "1 Column"
+msgstr ""
+
+#: options/team-settings.php:296
+msgid ""
+"100 will remain the image transparent as it is. The lower the number, the "
+"dimmer the image."
+msgstr ""
+
+#: options/team-settings.php:536
+msgid "1000"
+msgstr ""
+
+#: options/team-settings.php:1155
+msgid "1234567"
+msgstr ""
+
+#: options/team-settings.php:1151 options/team-settings.php:1153
+msgid "1234567890"
+msgstr ""
+
+#: options/team-settings.php:350 options/team-settings.php:360
+#: options/team-settings.php:366
+msgid "2 Columns"
+msgstr ""
+
+#: options/team-settings.php:290 options/team-settings.php:644
+#: options/team-settings.php:657
+msgid "20"
+msgstr ""
+
+#: options/team-settings.php:351 options/team-settings.php:361
+msgid "3 Columns"
+msgstr ""
+
+#: options/team-settings.php:474
+msgid "300"
+msgstr ""
+
+#: options/team-settings.php:510
+msgid "3000"
+msgstr ""
+
+#: options/team-settings.php:352 options/team-settings.php:362
+msgid "4 Columns"
+msgstr ""
+
+#: options/team-settings.php:353
+msgid "5 Columns"
+msgstr ""
+
+#: options/team-settings.php:1146
+msgid "5 Years"
+msgstr ""
+
+#: options/team-settings.php:354
+msgid "6 Columns"
+msgstr ""
+
+#: options/team-settings.php:355
+msgid "7 Columns"
+msgstr ""
+
+#: options/team-settings.php:356
+msgid "8 Columns"
+msgstr ""
+
+#: options/global-settings.php:253
+msgid ""
+"<div class=\"error\"><p>Error moving the uploaded file to a secure location."
+"</p></div>"
+msgstr ""
+
+#: options/global-settings.php:256
+msgid "<div class=\"error\"><p>Invalid file or file size too big.</p></div>"
+msgstr ""
+
+#: options/global-settings.php:250
+msgid "<div class=\"error\"><p>Invalid JSON file format.</p></div>"
+msgstr ""
+
+#: options/global-settings.php:247
+msgid ""
+"<div class=\"updated\"><p>All options are imported successfully.</p></div>"
+msgstr ""
+
+#: action/team-shortcode.php:50
+#, php-format
+msgid ""
+"<h3 class=\"rwctm_notice error\">Invalid team ID!</h3><p "
+"class=\"rwctm_notice warning\">It looks like you haven't added any teams yet."
+" Don't worry, we've got you covered! Login to your dashboard and click on "
+"the <a href=\"%1s\" target=\"_blank\"><strong>Add Template</strong></a> "
+"button to get started. You'll find <strong>10 ready-made templates</strong> "
+"to choose from. Simply select one and click on the <strong>Create "
+"Team</strong> button to instantly create your team!</p><p "
+"class=\"rwctm_notice info\">If you have any questions or need further "
+"assistance beyond what's covered in the help <a href=\"%2s\" "
+"target=\"_blank\"><strong>page</strong></a>, please don't hesitate to <a "
+"href=\"%3s\" target=\"_blank\"><strong>contact us</strong></a> via the "
+"WordPress support thread. We're here to provide you with the support you "
+"need."
+msgstr ""
+
+#: options/team-settings.php:1129
+msgid "<label class=\"input-title\">There are no departments!</label>"
+msgstr ""
+
+#: options/team-settings.php:1144
+msgid "<label class=\"input-title\">There are no designations!</label>"
+msgstr ""
+
+#: options/team-settings.php:1175
+msgid "<label class=\"input-title\">There are no social activities!</label>"
+msgstr ""
+
+#: inc/display-team.php:41
+msgid ""
+"<p class=\"get_started\"><strong>&#8270;&#8270;</strong> The preview might "
+"look a bit different from the actual results because of how the website's "
+"design varies between the front-end and admin panel. The preview shows how "
+"the team will appear on the website after it's published.<br><br><strong>"
+"&#8270;&#8270;</strong> To use the plugin, insert the shortcode in your "
+"theme where it will work correctly.<br><br><strong>&#8270;&#8270; Pop-ups "
+"and sliders won't function here; they'll only work on the live website."
+"</strong>"
+msgstr ""
+
+#: inc/team-sidebar.php:26
+#, php-format
+msgid "<p>%s</p>"
+msgstr ""
+
+#: inc/process-team.php:109
+msgid "<span class=\"status active\">Active</span>"
+msgstr ""
+
+#: inc/process-team.php:109 inc/process-team.php:126
+msgid "<span class=\"status inactive\">Inactive</span>"
+msgstr ""
+
+#: layout/layout-three.php:339 layout/layout-two.php:406
+msgid "<strong>Department:</strong> "
+msgstr ""
+
+#: layout/layout-three.php:351 layout/layout-two.php:418
+msgid "<strong>Experience:</strong> "
+msgstr ""
+
+#: options/activity-settings.php:58
+msgid "<strong>Well done!</strong> You successfully Updated Team Activities."
+msgstr ""
+
+#: inc/process-team.php:42
+msgid ""
+"<strong>Well done!</strong> You successfully Updated Team Member Settings."
+msgstr ""
+
+#: options/activity-settings.php:73 options/activity-settings.php:139
+msgid "Actions"
+msgstr ""
+
+#: inc/process-team.php:30
+#, php-format
+msgid "Active <span class=\"count\">%s</span>"
+msgstr ""
+
+#: options/activity-settings.php:65 options/activity-settings.php:131
+msgid "Activity Details"
+msgstr ""
+
+#: options/activity-settings.php:69 options/activity-settings.php:135
+msgid "Activity Name"
+msgstr ""
+
+#: options/activity-settings.php:70 options/activity-settings.php:136
+msgid "Activity URL"
+msgstr ""
+
+#: inc/process-team.php:121 options/activity-settings.php:163
+msgid "Add Activity"
+msgstr ""
+
+#: options/activity-settings.php:118 options/activity-settings.php:158
+msgid "Add New"
+msgstr ""
+
+#: inc/process-team.php:19
+msgid "Add Template"
+msgstr ""
+
+#: options/team-settings.php:1094
+msgid "Add the Detail bio of the member it will show on the detail popup."
+msgstr ""
+
+#: options/global-settings.php:111
+msgid "Add View Port Meta in the Header"
+msgstr ""
+
+#: layout/layout-three.php:384 layout/layout-two.php:451
+msgid "Address: "
+msgstr ""
+
+#: options/team-settings.php:277
+msgid ""
+"After adding or modifying image sizes, it is recommended to regenerate "
+"existing thumbnails using a plugin like 'Regenerate Thumbnails'. "
+"Regenerating thumbnails provides an opportunity to remove any unnecessary "
+"image sizes that were previously generated. This can help optimize your "
+"media library and reduce storage space by eliminating redundant image "
+"variations."
+msgstr ""
+
+#: options/global-settings.php:180
+msgid ""
+"After exporting, you can either use the backup file to restore your settings "
+"on this site again or another WordPress site."
+msgstr ""
+
+#: layout/layout-one.php:117 layout/layout-three.php:120
+#: layout/layout-two.php:128
+msgid "All"
+msgstr ""
+
+#: inc/process-team.php:29
+#, php-format
+msgid "All <span class=\"count\">%s</span>"
+msgstr ""
+
+#: inc/admin-menu.php:47
+msgid "All Teams"
+msgstr ""
+
+#: options/team-settings.php:508
+msgid "Auto play Change Interval"
+msgstr ""
+
+#: options/team-settings.php:382
+msgid "Automatic Margin"
+msgstr ""
+
+#: options/team-settings.php:509
+msgid "Autoplay Speed in milliseconds. 1 second = 1000 milliseconds."
+msgstr ""
+
+#: options/team-settings.php:1186
+msgid "Background Colors"
+msgstr ""
+
+#: options/team-settings.php:1116
+msgid ""
+"By associating members with specific departments, you can easily filter and "
+"group members based on the department they belong to. For example, in a "
+"company, you might have departments such as 'Marketing', 'Sales', "
+"'Engineering', and 'Operations'. By assigning employees to these departments,"
+" you could easily filter and group employees based on their department."
+msgstr ""
+
+#: options/team-settings.php:467
+msgid ""
+"By default, 'Slides to Show' is set to 1, meaning that only one item will be "
+"visible at a time. However, you can adjust the value of 'Slides to Show' to "
+"display multiple items simultaneously."
+msgstr ""
+
+#: options/team-settings.php:480
+msgid ""
+"By default, speed is set to 300, which means the transition animation lasts "
+"300 milliseconds (or 0.3 seconds). You can adjust this value to make the "
+"transition faster or slower according to your desired visual effect and "
+"timing."
+msgstr ""
+
+#: options/team-settings.php:779
+msgid "Check if you don't want to show department on member details."
+msgstr ""
+
+#: options/team-settings.php:745
+msgid "Check if you don't want to show department on thumbnail."
+msgstr ""
+
+#: options/team-settings.php:770
+msgid "Check if you don't want to show designation on member details."
+msgstr ""
+
+#: options/team-settings.php:736
+msgid "Check if you don't want to show designation on thumbnail."
+msgstr ""
+
+#: options/team-settings.php:788
+msgid "Check if you don't want to show social media icons on member details."
+msgstr ""
+
+#: options/team-settings.php:754
+msgid "Check if you don't want to show social media icons on thumbnail."
+msgstr ""
+
+#: options/team-settings.php:597
+msgid ""
+"Check if you want an image hover effect when mouseover on thumbnail images."
+msgstr ""
+
+#: options/team-settings.php:495
+msgid "Check if you want to enables auto play of slides."
+msgstr ""
+
+#: options/team-settings.php:718
+msgid "Check if you want to enlarge member thumbnail on mouseover."
+msgstr ""
+
+#: options/team-settings.php:451
+msgid "Check if you want to show member details of each carousel."
+msgstr ""
+
+#: options/team-settings.php:486
+msgid "Check if you want to show Next/Prev arrows."
+msgstr ""
+
+#: options/team-settings.php:178
+msgid "Check if you want to show ribbon for a member."
+msgstr ""
+
+#: inc/rwctm-guide.php:19
+msgid ""
+"Check out the 10-minutes \"Getting Started\" video for an overview of the "
+"team member plugin. Next, go to the template page to make your first team. "
+"Then, explore various options to showcase your team professionally."
+msgstr ""
+
+#: options/global-settings.php:263
+msgid "Choose a file from your computer:"
+msgstr ""
+
+#: options/global-settings.php:259
+msgid ""
+"Choose a json file to upload that you backup before, then click <strong>"
+"Upload file and import</strong>. Wordpress do the rest for you."
+msgstr ""
+
+#: options/global-settings.php:117
+msgid "Clear Database on Delete"
+msgstr ""
+
+#: inc/process-team.php:90
+msgid "Click to Copy Shortcode!"
+msgstr ""
+
+#: inc/team-sidebar.php:23
+msgid "Code Usage Instruction"
+msgstr ""
+
+#: options/team-settings.php:1317
+msgid "Color Setup"
+msgstr ""
+
+#: options/team-settings.php:1262
+msgid "Colors"
+msgstr ""
+
+#: options/team-settings.php:136
+msgid ""
+"Completely hide the team name and the colored bars underneath the team name."
+msgstr ""
+
+#: options/team-settings.php:307
+msgid "Container Width (in %)"
+msgstr ""
+
+#: action/init-functions.php:41 templates/process-template.php:36
+msgid "Create Team"
+msgstr ""
+
+#: options/team-settings.php:244
+msgid "Custom Image Properties"
+msgstr ""
+
+#: options/global-settings.php:48
+msgid "Custom Style"
+msgstr ""
+
+#: options/activity-settings.php:71 options/activity-settings.php:137
+msgid "Dashicons Class"
+msgstr ""
+
+#: inc/process-team.php:85 inc/process-team.php:122
+msgid "Delete"
+msgstr ""
+
+#: templates/process-template.php:26
+msgid "DEMO "
+msgstr ""
+
+#: options/team-settings.php:1116
+msgid "Department"
+msgstr ""
+
+#: options/team-settings.php:914
+msgid "Department Font Size (in px)"
+msgstr ""
+
+#: options/team-settings.php:1131
+msgid "Designation"
+msgstr ""
+
+#: options/team-settings.php:935
+msgid "Designation Font Size (in px)"
+msgstr ""
+
+#: options/team-settings.php:337
+msgid "Desktop"
+msgstr ""
+
+#: options/team-settings.php:551
+msgid "Disable Pop-up"
+msgstr ""
+
+#: options/team-settings.php:1305
+msgid "Display Setup"
+msgstr ""
+
+#: options/team-settings.php:615
+msgid "Display the filter navigation based on the member's department."
+msgstr ""
+
+#: inc/rwctm-guide.php:27
+msgid "Documentation"
+msgstr ""
+
+#: options/global-settings.php:184
+msgid "Download Export File"
+msgstr ""
+
+#: inc/process-team.php:81
+msgid "Duplicate Team"
+msgstr ""
+
+#: options/team-settings.php:253 options/team-settings.php:266
+msgid "e.g. 300"
+msgstr ""
+
+#: options/team-settings.php:1179
+msgid "e.g. Best"
+msgstr ""
+
+#: options/team-settings.php:1159
+msgid "e.g. example.com"
+msgstr ""
+
+#: options/global-settings.php:96
+msgid ""
+"Each price table you create has it's own primary font family settings under "
+"'RWC Team Members Settings &raquo; Font Settings'. If you leave that blank, "
+"only then primary font family entered here will work."
+msgstr ""
+
+#: options/global-settings.php:100
+msgid ""
+"Each price table you create has it's own secondary font family settings "
+"under 'RWC Team Members Settings &raquo; Font Settings'. If you leave that "
+"blank, only then secondary font family entered here will work."
+msgstr ""
+
+#: inc/process-team.php:83
+msgid "Edit Activity"
+msgstr ""
+
+#: inc/process-team.php:82
+msgid "Edit Members"
+msgstr ""
+
+#: inc/display-team.php:38
+msgid "Edit Team"
+msgstr ""
+
+#: options/team-settings.php:1148
+msgid "Email"
+msgstr ""
+
+#: layout/layout-three.php:379 layout/layout-two.php:446
+msgid "Email: "
+msgstr ""
+
+#: options/team-settings.php:494
+msgid "Enable Auto Play"
+msgstr ""
+
+#: options/global-settings.php:105
+msgid "Enable Dashicons in Theme"
+msgstr ""
+
+#: options/team-settings.php:614
+msgid "Enable Filter Navigation"
+msgstr ""
+
+#: options/global-settings.php:72
+msgid "Enable HTML Editor as the Default Post Editor"
+msgstr ""
+
+#: options/team-settings.php:596
+msgid "Enable Image Hover Effect"
+msgstr ""
+
+#: options/team-settings.php:202
+msgid "Enable Member Images"
+msgstr ""
+
+#: options/team-settings.php:177
+msgid "Enable Member Ribbons"
+msgstr ""
+
+#: options/team-settings.php:485
+msgid "Enable Next/Prev Arrows"
+msgstr ""
+
+#: options/global-settings.php:78
+msgid "Enable Plugin Default Google Font"
+msgstr ""
+
+#: options/team-settings.php:450
+msgid "Enable Slider Member Details"
+msgstr ""
+
+#: options/team-settings.php:80
+msgid "Enable Team"
+msgstr ""
+
+#: options/team-settings.php:525
+msgid "Enable Variable Width"
+msgstr ""
+
+#: options/global-settings.php:66
+msgid "Enable WP Post Editor for HTML Feature Type"
+msgstr ""
+
+#: options/team-settings.php:526
+msgid "Enables automatic slide width calculation."
+msgstr ""
+
+#: options/team-settings.php:717
+msgid "Enlarge Thumbnail on Hover"
+msgstr ""
+
+#: options/team-settings.php:1110
+msgid ""
+"Enter a Short Description of the member it will show on the list view page."
+msgstr ""
+
+#: options/team-settings.php:1225
+msgid "Enter a URL / upload an image"
+msgstr ""
+
+#: options/activity-settings.php:79 options/activity-settings.php:144
+msgid "Enter Activity Name"
+msgstr ""
+
+#: options/activity-settings.php:89 options/activity-settings.php:145
+msgid "Enter Activity URL"
+msgstr ""
+
+#: options/team-settings.php:656
+msgid "Enter bottom space of filter navigation menu."
+msgstr ""
+
+#: options/team-settings.php:1108
+msgid "Enter Detail Bio"
+msgstr ""
+
+#: options/activity-settings.php:69
+msgid ""
+"Enter different activities that describe your team members. These could "
+"include department names (e.g., Finance), job titles (e.g., Account Manager),"
+" skills (e.g., PHP), or even their social media profiles (e.g., Facebook). "
+"Providing accurate activity names will help organize and categorize your "
+"team effectively."
+msgstr ""
+
+#: options/activity-settings.php:90 options/activity-settings.php:146
+msgid "Enter Icon Class"
+msgstr ""
+
+#: options/team-settings.php:117
+msgid "Enter One URL Per Line."
+msgstr ""
+
+#: options/global-settings.php:96
+msgid "Enter Primary Font Family"
+msgstr ""
+
+#: options/team-settings.php:1177
+msgid ""
+"Enter ribbon text to make current member more attractive, like 'best', 'new',"
+" 'hot' etc."
+msgstr ""
+
+#: options/global-settings.php:100
+msgid "Enter Secondary Font Family"
+msgstr ""
+
+#: options/team-settings.php:118
+msgid "Enter Shortcode Post/Page Urls"
+msgstr ""
+
+#: options/team-settings.php:1113
+msgid "Enter Tag Line"
+msgstr ""
+
+#: options/team-settings.php:866
+msgid ""
+"Enter the font size of the filter navigation for desktop, tab and mobile "
+"view."
+msgstr ""
+
+#: options/team-settings.php:915
+msgid ""
+"Enter the font size of the member department on the thumbnail for desktop, "
+"tab and mobile view."
+msgstr ""
+
+#: options/team-settings.php:936
+msgid ""
+"Enter the font size of the member designation on the thumbnail for desktop, "
+"tab and mobile view."
+msgstr ""
+
+#: options/team-settings.php:894
+msgid ""
+"Enter the font size of the member name on the thumbnail for desktop, tab and "
+"mobile view."
+msgstr ""
+
+#: options/team-settings.php:957
+msgid ""
+"Enter the font size of the member short bio on the thumbnail for desktop, "
+"tab and mobile view."
+msgstr ""
+
+#: options/team-settings.php:978
+msgid ""
+"Enter the font size of the social icon on the thumbnail for desktop, tab and "
+"mobile view."
+msgstr ""
+
+#: options/team-settings.php:845
+msgid "Enter the font size of the team name for desktop, tab and mobile view."
+msgstr ""
+
+#: options/team-settings.php:1222
+msgid ""
+"Enter the image location or upload an image from your computer. If Member "
+"Image is enabled in General Settings under Team Member Settings, member "
+"image will be displayed and it is recommended that you set the image width "
+"before adding or updating the member image."
+msgstr ""
+
+#: options/team-settings.php:265
+msgid "Enter the image thumbnail height (px)"
+msgstr ""
+
+#: options/team-settings.php:252
+msgid "Enter the image thumbnail width (px)"
+msgstr ""
+
+#: options/team-settings.php:1112
+msgid "Enter the member tag line, it will show on the detail popup."
+msgstr ""
+
+#: options/team-settings.php:289
+msgid "Enter the opacity of the image between 0 and 100"
+msgstr ""
+
+#: options/team-settings.php:121
+msgid ""
+"Enter the page URL(s) here where you want to show this team. By entering the "
+"page URL(s), the customized CSS will load only the specific team's custom "
+"CSS. In this way, file size of the custom CSS will reduce and the page load "
+"faster."
+msgstr ""
+
+#: options/team-settings.php:806
+msgid "Enter the primary font family here."
+msgstr ""
+
+#: options/team-settings.php:816
+msgid "Enter the secondary font family here."
+msgstr ""
+
+#: options/team-settings.php:308
+msgid "Enter the total container width of your team here."
+msgstr ""
+
+#: options/team-settings.php:643
+msgid "Enter top space of filter navigation menu."
+msgstr ""
+
+#: options/team-settings.php:97
+msgid "Enter your team name here"
+msgstr ""
+
+#: options/activity-settings.php:135
+msgid ""
+"Enter your team social links in the text box. A social is a distinctive "
+"characteristic of a good or service that sets it apart from similar items. "
+"Means of providing benefits to customers."
+msgstr ""
+
+#: options/team-settings.php:1149
+msgid "example@gmail.com"
+msgstr ""
+
+#: options/activity-settings.php:70
+msgid ""
+"Exclusive to social media activities, use the 'Activity Link' field to input "
+"the corresponding profile link. This will allow easy access to their social "
+"media profiles and enhance connectivity within the team."
+msgstr ""
+
+#: options/team-settings.php:1145
+msgid "Experience"
+msgstr ""
+
+#: options/global-settings.php:177
+msgid "Export"
+msgstr ""
+
+#: options/global-settings.php:49
+msgid "Export Team"
+msgstr ""
+
+#: options/team-settings.php:1154
+msgid "Fax"
+msgstr ""
+
+#: layout/layout-three.php:374 layout/layout-two.php:441
+msgid "Fax: "
+msgstr ""
+
+#: options/team-settings.php:1258
+msgid "Filter"
+msgstr ""
+
+#: options/team-settings.php:628
+msgid "Filter Alignment"
+msgstr ""
+
+#: options/team-settings.php:1022
+msgid "Filter Navigation"
+msgstr ""
+
+#: options/team-settings.php:1293
+msgid "Filter Setup"
+msgstr ""
+
+#: options/team-settings.php:1261
+msgid "Font"
+msgstr ""
+
+#: options/team-settings.php:798
+msgid "Font Family"
+msgstr ""
+
+#: options/team-settings.php:1311
+msgid "Font Setup"
+msgstr ""
+
+#: options/team-settings.php:825
+msgid "Font Size"
+msgstr ""
+
+#: options/team-settings.php:386
+msgid ""
+"For image margin, you can select automatic margin or set it by entering "
+"margin value"
+msgstr ""
+
+#: options/team-settings.php:1254
+msgid "General"
+msgstr ""
+
+#: options/team-settings.php:1269
+msgid "General Setup"
+msgstr ""
+
+#: options/global-settings.php:55
+msgid "Global Settings"
+msgstr ""
+
+#: options/global-settings.php:22
+msgid "Global Settings Updated."
+msgstr ""
+
+#: inc/admin-menu.php:74
+msgid "Help"
+msgstr ""
+
+#: options/team-settings.php:106
+msgid ""
+"Here you can name as you wish. There is no problem if you give a name that "
+"is already used. This name will be used for display only."
+msgstr ""
+
+#: options/team-settings.php:778
+msgid "Hide Member Department"
+msgstr ""
+
+#: options/team-settings.php:769
+msgid "Hide Member Designation"
+msgstr ""
+
+#: options/team-settings.php:787
+msgid "Hide Member Social Icon"
+msgstr ""
+
+#: options/team-settings.php:135
+msgid "Hide the Team Name"
+msgstr ""
+
+#: options/team-settings.php:744
+msgid "Hide Thumbnail Department"
+msgstr ""
+
+#: options/team-settings.php:735
+msgid "Hide Thumbnail Designation"
+msgstr ""
+
+#: options/team-settings.php:753
+msgid "Hide Thumbnail Social Icon"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://wordpress.org/plugins/rwc-team-members/"
+msgstr ""
+
+#: options/activity-settings.php:89 options/activity-settings.php:145
+msgid "https://"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.realwebcare.com/"
+msgstr ""
+
+#: options/global-settings.php:27
+msgid "Hurray! You don't have anymore unnecessary team options to clear!"
+msgstr ""
+
+#: options/activity-settings.php:90 options/activity-settings.php:146
+msgid "Icon"
+msgstr ""
+
+#: inc/process-team.php:46
+msgid "ID"
+msgstr ""
+
+#: options/global-settings.php:117
+msgid ""
+"If you decide not to use the plugin anymore, you can leave this option "
+"checked. By doing this, all the data stored in the database will be deleted "
+"along with the deletion of the plugin."
+msgstr ""
+
+#: options/team-settings.php:327
+msgid ""
+"If your team has many members, you can divide the members by row by "
+"selecting the number of columns from the dropdown list."
+msgstr ""
+
+#: options/team-settings.php:264
+msgid "Image Height"
+msgstr ""
+
+#: options/team-settings.php:397
+msgid "Image Margin (in px)"
+msgstr ""
+
+#: options/team-settings.php:398
+msgid "Image margin respectively for margin top, right, bottom and left. "
+msgstr ""
+
+#: options/team-settings.php:288
+msgid "Image Opacity"
+msgstr ""
+
+#: options/team-settings.php:216
+msgid "Image Properties"
+msgstr ""
+
+#: options/team-settings.php:223
+msgid "Image Size"
+msgstr ""
+
+#: options/team-settings.php:251
+msgid "Image Width"
+msgstr ""
+
+#: options/team-settings.php:218
+msgid ""
+"Image width and height are for thumbnail size. For image margin, you can "
+"select automatic margin or set it by entering margin value. For image "
+"opacity, enter a value from 1 to 100. 100 will work as &#34;opacity:1&#34; "
+"and 50 will work as &#34;opacity:0.5&#34;"
+msgstr ""
+
+#: options/global-settings.php:211
+msgid "Import"
+msgstr ""
+
+#: options/global-settings.php:50
+msgid "Import Team"
+msgstr ""
+
+#: options/team-settings.php:800
+msgid ""
+"In order to use a font family on your website, you need to make sure that "
+"the CSS file for that font is included and called properly in your website's "
+"HTML code. In this plugin you'll get an option in the global settings to "
+"link a font's CSS file or to use the plugin's default font. This can be a "
+"convenient way to add custom fonts to your website without having to "
+"manually add the CSS code yourself."
+msgstr ""
+
+#: inc/process-team.php:31
+#, php-format
+msgid "Inactive <span class=\"count\">%s</span>"
+msgstr ""
+
+#: options/global-settings.php:66
+msgid ""
+"Instead of worrying about the alignment and organization of text, quotes, "
+"and images, enable WP default post editor and you can focus on creating. "
+"Most of the users prefer to write on it."
+msgstr ""
+
+#: action/team-shortcode.php:30
+msgid "Invalid team ID!"
+msgstr ""
+
+#: layout/layout-one.php:67 layout/layout-three.php:67 layout/layout-two.php:67
+#, php-format
+msgid ""
+"It is necessary to include the current page URL for the team member "
+"shortcode. Please add the current page URL to the list of <strong>Shortcode "
+"Post/Page URLs</strong> to ensure proper display and styling. Go to the team "
+"<a href=\"%s\" target=\"_blank\"><strong>lists page</strong></a>. Mouseover "
+"the team name, click on <strong>Edit Members</strong>, and scroll down to "
+"the <strong>General Settings</strong> tab. Locate the <strong>Shortcode "
+"Post/Page URLs</strong> section and paste the page URL (<strong>%s</strong>) "
+"there."
+msgstr ""
+
+#: options/global-settings.php:72
+msgid ""
+"It is useful when you have only a few users and most of them agree to your "
+"choice to set HTML editor as the default post editor in WordPress. The "
+"advantage is that you will have the visual editor in the background which "
+"you can choose to use anytime."
+msgstr ""
+
+#: inc/team-sidebar.php:29
+msgid ""
+"Keep in mind that if you are making changes directly to your theme files, "
+"those changes will be overwritten if you update the theme. To avoid this, "
+"you can create a child theme and make your changes there instead."
+msgstr ""
+
+#: options/team-settings.php:1257
+msgid "Layout"
+msgstr ""
+
+#: options/team-settings.php:567
+msgid "Layout Content Style"
+msgstr ""
+
+#: options/team-settings.php:1287
+msgid "Layout Setup"
+msgstr ""
+
+#: options/team-settings.php:423
+msgid "Layout Type for the Team"
+msgstr ""
+
+#: options/team-settings.php:1156
+msgid "Location"
+msgstr ""
+
+#: options/team-settings.php:655
+msgid "Margin Bottom (in px)"
+msgstr ""
+
+#: options/team-settings.php:642
+msgid "Margin Top (in px)"
+msgstr ""
+
+#: options/team-settings.php:127
+msgid "Mark if you want to open social media link in new tab."
+msgstr ""
+
+#: options/team-settings.php:81
+#, php-format
+msgid "Mark if you want to show %s"
+msgstr ""
+
+#: options/team-settings.php:203
+msgid "Mark if you want to show member images."
+msgstr ""
+
+#: options/team-settings.php:552
+msgid "Mark the checkbox if you don't want to show pop-up"
+msgstr ""
+
+#: options/team-settings.php:1255
+msgid "Media"
+msgstr ""
+
+#: options/team-settings.php:1275
+msgid "Media Setup"
+msgstr ""
+
+#: options/team-settings.php:1094
+msgid "Member Detail Bio"
+msgstr ""
+
+#: options/team-settings.php:762
+msgid "Member Details Show/Hide"
+msgstr ""
+
+#: options/team-settings.php:195 options/team-settings.php:1222
+msgid "Member Image"
+msgstr ""
+
+#: options/team-settings.php:1147
+msgid "Member Info"
+msgstr ""
+
+#: options/team-settings.php:1091 options/team-settings.php:1092
+msgid "Member Name"
+msgstr ""
+
+#: options/team-settings.php:893
+msgid "Member Name Font Size (in px)"
+msgstr ""
+
+#: options/team-settings.php:1114
+msgid "Member Position"
+msgstr ""
+
+#: options/team-settings.php:1177
+msgid "Member Ribbon"
+msgstr ""
+
+#: options/team-settings.php:170
+msgid "Member Ribbons"
+msgstr ""
+
+#: options/team-settings.php:1110
+msgid "Member Short Bio"
+msgstr ""
+
+#: options/team-settings.php:1160
+msgid "Member Social Link (Only ID)"
+msgstr ""
+
+#: options/team-settings.php:1112
+msgid "Member Tag Line"
+msgstr ""
+
+#: options/team-settings.php:674
+msgid "Member Thumbnail Alignment"
+msgstr ""
+
+#: options/team-settings.php:339 options/team-settings.php:1152
+msgid "Mobile"
+msgstr ""
+
+#: layout/layout-three.php:369 layout/layout-two.php:436
+msgid "Mobile: "
+msgstr ""
+
+#: options/team-settings.php:98
+msgid "Modify auto generated name if you want"
+msgstr ""
+
+#: options/team-settings.php:94
+msgid "Modify Team Name"
+msgstr ""
+
+#: inc/process-team.php:124
+msgid ""
+"Mouseover on the team name in the left and clicked on <strong>Add "
+"Activity</strong> link. To get started you have to add some social links "
+"first. After that, you will be able to setup team columns. After that you "
+"will get the <strong>SHORTCODE</strong> here."
+msgstr ""
+
+#: options/activity-settings.php:79 options/activity-settings.php:144
+msgid "Name:"
+msgstr ""
+
+#: options/team-settings.php:1039
+msgid "Navigation Active BG Color"
+msgstr ""
+
+#: options/team-settings.php:1059
+msgid "Navigation Active Font Color"
+msgstr ""
+
+#: options/team-settings.php:1029
+msgid "Navigation BG Color"
+msgstr ""
+
+#: options/team-settings.php:1049
+msgid "Navigation Font Color"
+msgstr ""
+
+#: options/team-settings.php:865
+msgid "Navigation Font Size (in px)"
+msgstr ""
+
+#: options/team-settings.php:1073
+msgid "New Member"
+msgstr ""
+
+#: options/team-settings.php:1244
+msgid "No Members yet!"
+msgstr ""
+
+#: options/team-settings.php:325
+msgid "Number of Members per Row"
+msgstr ""
+
+#: options/team-settings.php:460
+msgid "Number of slides to show at a time."
+msgstr ""
+
+#: options/team-settings.php:126
+msgid "Open Link in New Tab"
+msgstr ""
+
+#: options/global-settings.php:124
+msgid "Optimize RWC Team Members"
+msgstr ""
+
+#: options/global-settings.php:47
+msgid "Options"
+msgstr ""
+
+#: options/team-settings.php:1158
+msgid "Personal Web URL"
+msgstr ""
+
+#: options/global-settings.php:151
+msgid ""
+"Please add all your custom CSS here and avoid modifying the core plugin CSS, "
+"since that'll make upgrading the plugin problematic. Your custom CSS will be "
+"loaded after the plugin's stylesheets, which means that your rules will take "
+"precedence. Just add your CSS here for what you want to change."
+msgstr ""
+
+#: layout/layout-one.php:58 layout/layout-three.php:58 layout/layout-two.php:58
+msgid ""
+"Please enter valid URLs for the team member shortcode. Each URL should be on "
+"a new line."
+msgstr ""
+
+#: options/team-settings.php:498
+msgid ""
+"Please note that enabling auto-play mode will disable member details in the "
+"left popup. Proceed with this option only if you don't require member "
+"details in popup mode."
+msgstr ""
+
+#: inc/process-team.php:84 lib/team-functions.php:631
+#: options/team-settings.php:1230
+msgid "Preview"
+msgstr ""
+
+#: options/team-settings.php:805
+msgid "Primary Font Family"
+msgstr ""
+
+#. Author of the plugin
+msgid "Realwebcare"
+msgstr ""
+
+#: inc/process-team.php:134
+msgid "Regenerate Shortcode"
+msgstr ""
+
+#: options/global-settings.php:123
+msgid "Remove Unnecessary Team Option"
+msgstr ""
+
+#: inc/team-sidebar.php:27
+#, php-format
+msgid "Replace %s with the actual id of the team that you want to display."
+msgstr ""
+
+#: options/team-settings.php:1178
+msgid "Ribbon Text"
+msgstr ""
+
+#: options/global-settings.php:148
+msgid "RWC Team Member Custom CSS"
+msgstr ""
+
+#: options/global-settings.php:38
+msgid "RWC Team Member Custom CSS Updated."
+msgstr ""
+
+#: options/global-settings.php:15
+msgid "RWC Team Member Global Settings"
+msgstr ""
+
+#: templates/process-template.php:15
+msgid "RWC Team Member Templates"
+msgstr ""
+
+#. Name of the plugin
+#: inc/process-team.php:19
+msgid "RWC Team Members"
+msgstr ""
+
+#: inc/rwctm-guide.php:15
+msgid "RWC Team Members - Help"
+msgstr ""
+
+#: inc/admin-menu.php:37
+msgid "RWC Teams"
+msgstr ""
+
+#: inc/admin-menu.php:46
+msgid "RWCTM Lists"
+msgstr ""
+
+#: options/global-settings.php:130 options/global-settings.php:150
+msgid "Save Changes"
+msgstr ""
+
+#: options/team-settings.php:1333
+msgid "Save Members"
+msgstr ""
+
+#: options/team-settings.php:815
+msgid "Secondary Font Family"
+msgstr ""
+
+#: options/activity-settings.php:94 options/activity-settings.php:98
+#: options/activity-settings.php:102 options/activity-settings.php:106
+#: options/activity-settings.php:149
+msgid "Sector"
+msgstr ""
+
+#: lib/team-functions.php:1068
+msgid "Security check failed. Please refresh the page and try again."
+msgstr ""
+
+#: options/team-settings.php:568
+msgid "Select the Layout Style as per image grid, pop-up and slider."
+msgstr ""
+
+#: options/team-settings.php:370
+msgid ""
+"Select the number of members you would like to display per row for the "
+"desktop view. This setting applies to screen widths starting from 993px and "
+"above."
+msgstr ""
+
+#: options/team-settings.php:682
+msgid "Set alignment of the member's thumbnail."
+msgstr ""
+
+#: options/team-settings.php:696
+msgid "Set text align for thumbnail content details."
+msgstr ""
+
+#: options/team-settings.php:1013
+#, php-format
+msgid "Set the each first letter font color of the %s name."
+msgstr ""
+
+#: options/team-settings.php:1040
+#, php-format
+msgid "Set the filter navigation active background color of the %s."
+msgstr ""
+
+#: options/team-settings.php:1060
+#, php-format
+msgid "Set the filter navigation active font color of the %s."
+msgstr ""
+
+#: options/team-settings.php:1030
+#, php-format
+msgid "Set the filter navigation background color of the %s."
+msgstr ""
+
+#: options/team-settings.php:1050
+#, php-format
+msgid "Set the filter navigation font color of the %s."
+msgstr ""
+
+#: options/team-settings.php:1003
+#, php-format
+msgid "Set the font color of the %s name."
+msgstr ""
+
+#: options/team-settings.php:383
+msgid "Set the image margin as &#34;auto&#34;."
+msgstr ""
+
+#: options/team-settings.php:224
+msgid "Set the member thumbnail size."
+msgstr ""
+
+#: options/team-settings.php:629
+msgid "Set the navigation alignment for the team member."
+msgstr ""
+
+#: options/team-settings.php:535
+msgid "Set the zIndex values for slides, useful for IE9 and lower."
+msgstr ""
+
+#: action/init-functions.php:42 inc/admin-menu.php:65
+msgid "Settings"
+msgstr ""
+
+#: options/team-settings.php:956
+msgid "Short Bio Font Size (in px)"
+msgstr ""
+
+#: inc/process-team.php:48
+msgid "Shortcode"
+msgstr ""
+
+#: options/team-settings.php:116
+msgid "Shortcode Post/Page URLs:"
+msgstr ""
+
+#: options/team-settings.php:1260
+msgid "Show/Hide"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Showcase your team's talent and expertise with ease. Our team member plugin "
+"offers grid, slider, popup and filter layouts using a shortcode."
+msgstr ""
+
+#: options/team-settings.php:443
+msgid "Slider Properties"
+msgstr ""
+
+#: options/team-settings.php:459
+msgid "Slides to Show"
+msgstr ""
+
+#: options/activity-settings.php:96 options/activity-settings.php:100
+#: options/activity-settings.php:104 options/activity-settings.php:108
+#: options/activity-settings.php:151
+msgid "Social"
+msgstr ""
+
+#: options/team-settings.php:1215
+msgid "Social Hover Color"
+msgstr ""
+
+#: options/team-settings.php:977
+msgid "Social Icon Font Size (in px)"
+msgstr ""
+
+#: options/team-settings.php:1169
+msgid "Social ID"
+msgstr ""
+
+#: options/team-settings.php:1169
+msgid "Social Link"
+msgstr ""
+
+#: options/team-settings.php:1198
+msgid "Social Media Colors"
+msgstr ""
+
+#: options/team-settings.php:827
+msgid ""
+"Specify the font sizes for various attributes of the members. You can enter "
+"the font size for desktop, tablet, and mobile views individually. The "
+"desktop setting will be effective for screen widths of 993px and above. The "
+"tablet view will target devices with a width range of 481px to 992px. The "
+"mobile view, on the other hand, will apply to screen widths of 480px and "
+"below."
+msgstr ""
+
+#: options/team-settings.php:372
+msgid ""
+"Specify the number of members to display per row for the mobile view, which "
+"applies to screen widths of 480px and below."
+msgstr ""
+
+#: options/team-settings.php:371
+msgid ""
+"Specify the number of members to display per row in the tab view, targeting "
+"tablets with a width range of 481px to 992px."
+msgstr ""
+
+#: inc/process-team.php:50 options/activity-settings.php:95
+#: options/activity-settings.php:99 options/activity-settings.php:103
+#: options/activity-settings.php:107 options/activity-settings.php:150
+msgid "Status"
+msgstr ""
+
+#: options/team-settings.php:1256
+msgid "Structure"
+msgstr ""
+
+#: options/team-settings.php:1281
+msgid "Structure Setup"
+msgstr ""
+
+#: action/init-functions.php:43
+msgid "Support"
+msgstr ""
+
+#: options/team-settings.php:338
+msgid "Tab"
+msgstr ""
+
+#: options/team-settings.php:607
+msgid "Team Filter Alignment"
+msgstr ""
+
+#: options/team-settings.php:589
+msgid "Team Layout Image Hover Effect"
+msgstr ""
+
+#: options/team-settings.php:560
+msgid "Team Layout Style"
+msgstr ""
+
+#: options/team-settings.php:416
+msgid "Team Layout Type"
+msgstr ""
+
+#: options/team-settings.php:1085
+msgid "Team Member "
+msgstr ""
+
+#: options/team-settings.php:1181
+msgid "Team Member Colors"
+msgstr ""
+
+#: options/team-settings.php:1072
+msgid "Team Member Columns"
+msgstr ""
+
+#: options/team-settings.php:1089
+msgid "Team Member Details"
+msgstr ""
+
+#: options/team-settings.php:1220
+msgid "Team Member Image"
+msgstr ""
+
+#: inc/process-team.php:47 options/team-settings.php:93
+#: options/team-settings.php:995
+msgid "Team Name"
+msgstr ""
+
+#: options/team-settings.php:832
+msgid "Team Name &amp; Filter Navigation"
+msgstr ""
+
+#: options/team-settings.php:1002
+msgid "Team Name Color"
+msgstr ""
+
+#: options/team-settings.php:844
+msgid "Team Name Font Size (in px)"
+msgstr ""
+
+#: options/team-settings.php:144
+msgid "Team Name Margin"
+msgstr ""
+
+#: options/team-settings.php:155
+msgid "Team Name Margin (in px)"
+msgstr ""
+
+#: options/team-settings.php:156
+msgid "Team name margin respectively for margin top, right, bottom and left. "
+msgstr ""
+
+#: options/team-settings.php:1012
+msgid "Team Name Marked Color"
+msgstr ""
+
+#: inc/admin-menu.php:56
+msgid "Team Templates"
+msgstr ""
+
+#: layout/layout-three.php:364 layout/layout-two.php:431
+msgid "Tel: "
+msgstr ""
+
+#: options/team-settings.php:1150
+msgid "Telephone"
+msgstr ""
+
+#: inc/process-team.php:49
+msgid "Template"
+msgstr ""
+
+#: templates/process-template.php:31
+#, php-format
+msgid "Template %s"
+msgstr ""
+
+#: inc/process-team.php:96
+msgid "Template 1"
+msgstr ""
+
+#: inc/process-team.php:105
+msgid "Template 10"
+msgstr ""
+
+#: inc/process-team.php:97
+msgid "Template 2"
+msgstr ""
+
+#: inc/process-team.php:98
+msgid "Template 3"
+msgstr ""
+
+#: inc/process-team.php:99
+msgid "Template 4"
+msgstr ""
+
+#: inc/process-team.php:100
+msgid "Template 5"
+msgstr ""
+
+#: inc/process-team.php:101
+msgid "Template 6"
+msgstr ""
+
+#: inc/process-team.php:102
+msgid "Template 7"
+msgstr ""
+
+#: inc/process-team.php:103
+msgid "Template 8"
+msgstr ""
+
+#: inc/process-team.php:104
+msgid "Template 9"
+msgstr ""
+
+#: templates/process-template.php:22
+msgid "Template Preview"
+msgstr ""
+
+#: options/team-settings.php:473
+msgid ""
+"The duration (in milliseconds) of the transition animation between carousel "
+"slides."
+msgstr ""
+
+#: options/activity-settings.php:72
+msgid ""
+"There are 4 types of activities. Select 'Sector' for Member "
+"Category/Department, 'Status' for Member Designation, 'Social' for social "
+"media activities of the member and 'Skill' for member skills on different "
+"platforms. "
+msgstr ""
+
+#: options/global-settings.php:179
+msgid ""
+"This backup file contains all the configuration and setting options of your "
+"teams. Note that it do <b>NOT</b> contain posts, pages, or any relevant data,"
+" just your all team options."
+msgstr ""
+
+#: options/team-settings.php:107
+msgid ""
+"This is an auto-generated team name generated when creating a team from a "
+"ready-made template. Auto generated team names must be unique. If you enter "
+"a name that is already in use, it will be saved in the database by adding an "
+"extra word to the name you entered. It will not be a problem. However, it is "
+"good practice to use an unique name."
+msgstr ""
+
+#: options/team-settings.php:246
+msgid ""
+"This will allow you to resize &amp; crop WordPress images uploaded via the "
+"media uploader on the fly. It relies on WP's native functions to resize the "
+"images, and checks if there is an already resized version of the image so "
+"that it won't be wasting your server's resources to regenerate the images."
+msgstr ""
+
+#: options/team-settings.php:1259
+msgid "Thumbnail"
+msgstr ""
+
+#: options/team-settings.php:681
+msgid "Thumbnail Alignment"
+msgstr ""
+
+#: options/team-settings.php:1189
+msgid "Thumbnail Column BG"
+msgstr ""
+
+#: options/team-settings.php:881
+msgid "Thumbnail Font Size"
+msgstr ""
+
+#: options/team-settings.php:728
+msgid "Thumbnail Items Show/Hide"
+msgstr ""
+
+#: options/team-settings.php:1193
+msgid "Thumbnail Ribbon BG"
+msgstr ""
+
+#: options/team-settings.php:710
+msgid "Thumbnail Scale &amp; Shadow"
+msgstr ""
+
+#: options/team-settings.php:1299
+msgid "Thumbnail Setup"
+msgstr ""
+
+#: options/team-settings.php:695
+msgid "Thumbnail Text Alignment"
+msgstr ""
+
+#: inc/team-sidebar.php:25
+#, php-format
+msgid ""
+"To display a team shortcode in a WordPress theme file, you can use the %s "
+"function:"
+msgstr ""
+
+#: options/activity-settings.php:71 options/activity-settings.php:137
+msgid ""
+"To set up Dashicons you just need to put the icon class in the below text "
+"box that corresponds to the icon you are trying to display; for example if "
+"you want to display the camera icon you can add the 'dashicons-camera' class."
+" Visit 'developer.wordpress.org/resource/dashicons/' to learn more about "
+"Dashicons."
+msgstr ""
+
+#: options/team-settings.php:472
+msgid "Transition Speed"
+msgstr ""
+
+#: options/activity-settings.php:72 options/activity-settings.php:138
+msgid "Type"
+msgstr ""
+
+#: options/activity-settings.php:125
+msgid "Update Activity"
+msgstr ""
+
+#: options/global-settings.php:128
+msgid "Update Changes"
+msgstr ""
+
+#: options/global-settings.php:267
+msgid "Upload file and import"
+msgstr ""
+
+#: action/init-functions.php:152 options/team-settings.php:1224
+msgid "Upload Image"
+msgstr ""
+
+#: inc/rwctm-guide.php:18
+msgid "Watch the Video"
+msgstr ""
+
+#: options/team-settings.php:445
+msgid ""
+"We offer an extensive range of options that empower you to fine-tune the "
+"carousel's behavior and appearance according to your team member's "
+"preferences. Below, we present some commonly used configurations that can be "
+"customized to suit your needs"
+msgstr ""
+
+#: layout/layout-three.php:389 layout/layout-two.php:456
+msgid "Website: "
+msgstr ""
+
+#: options/team-settings.php:454
+msgid ""
+"When using the slider layout, you can include modal options to view detailed "
+"information about team members. Enable it to show member details. Disable to "
+"prevent displaying member details when clicking on their thumbnail."
+msgstr ""
+
+#: options/global-settings.php:178
+msgid ""
+"When you click <strong>Download Export File</strong> button, WordPress will "
+"generate a JSON file for you to save to your computer."
+msgstr ""
+
+#: options/global-settings.php:123
+msgid ""
+"While customizing the team, some unnecessary team options may be created, "
+"which can make the database heavier. By clicking on this button, without any "
+"hassle, unnecessary options can be removed from the database right away!"
+msgstr ""
+
+#: options/team-settings.php:529
+msgid ""
+"With 'Variable Width' set to true, each item within the carousel can have "
+"its own unique width. This is useful when you have items with varying "
+"content lengths or when you want to create a visually dynamic carousel "
+"layout. Additionally, when using 'Variable Width', other options like "
+"'Slides to Show' and 'Slides to Scroll' may behave differently, as the "
+"number of items visible or scrolled might not correspond to a fixed number "
+"due to the variable widths of the items."
+msgstr ""
+
+#: options/team-settings.php:1111
+msgid "Write Some Short Bio"
+msgstr ""
+
+#: inc/team-sidebar.php:28
+msgid ""
+"You can place this code anywhere in your theme file where you want the team "
+"to appear. For example, you could place it in the template file for a "
+"specific page of your site."
+msgstr ""
+
+#: action/team-shortcode.php:83
+msgid "You didn't add any teams yet!"
+msgstr ""
+
+#: lib/team-functions.php:98 lib/team-functions.php:198
+#: lib/team-functions.php:859 lib/team-functions.php:932
+#: lib/team-functions.php:1006 lib/team-functions.php:1046
+#: options/global-settings.php:31 options/global-settings.php:42
+#: options/team-settings.php:32
+msgid ""
+"You do not have sufficient permissions to access this page, or the nonce "
+"verification failed."
+msgstr ""
+
+#: inc/admin-menu.php:84 inc/admin-menu.php:92 inc/admin-menu.php:100
+#: inc/admin-menu.php:108 inc/display-team.php:17 inc/display-team.php:26
+#: lib/team-functions.php:220 lib/team-functions.php:292
+#: lib/team-functions.php:321 lib/team-functions.php:372
+#: lib/team-functions.php:392 lib/team-functions.php:1063
+#: lib/team-functions.php:1118 lib/team-functions.php:1144
+#: lib/team-functions.php:1177 options/activity-settings.php:17
+#: options/activity-settings.php:26 options/team-settings.php:22
+#: templates/template-options.php:23 templates/template-options.php:32
+#: templates/template-options.php:226 templates/template-options.php:235
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: options/team-settings.php:534
+msgid "zIndex Values for Slides"
+msgstr ""

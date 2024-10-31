@@ -1,0 +1,239 @@
+/*!
+ * jQuery UI - v1.10.4 - 2014-03-20
+ * http://jqueryui.com
+ * Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.theme.css, jquery.ui.tabs.css
+ * Using for WRC Pricing Tables Ultimate 1.0.4 by @realwebcare - https://www.realwebcare.com/
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/
+ * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT
+ *
+ * @package RWC Team Members - v0.5 - 25 July, 2024
+ */
+
+/* Layout helpers
+----------------------------------*/
+#add_new_team .ui-helper-hidden {display: none;}
+#add_new_team .ui-helper-hidden-accessible {border: 0;clip: rect(0 0 0 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}
+#add_new_team .ui-helper-reset {margin: 0;padding: 0;border: 0;outline: 0;line-height: 1.3;text-decoration: none;font-size: 100%;list-style: none;}
+#add_new_team .ui-helper-clearfix:before, #add_new_team .ui-helper-clearfix:after {content: "";display: table;border-collapse: collapse;}
+#add_new_team .ui-helper-clearfix:after {clear: both;}
+#add_new_team .ui-helper-clearfix {min-height: 0; /* support: IE7 */}
+#add_new_team .ui-helper-zfix {width: 100%;height: 100%;top: 0;left: 0;position: absolute;opacity: 0;filter:Alpha(Opacity=0);}
+#add_new_team .ui-front {z-index: 100;}
+
+/* Interaction Cues
+----------------------------------*/
+#add_new_team .ui-state-disabled {cursor: default !important;}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+#add_new_team .ui-icon {display: block;text-indent: -99999px;overflow: hidden;background-repeat: no-repeat;}
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+#add_new_team .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+#add_new_team .ui-accordion .ui-accordion-header { display: block; cursor: pointer; position: relative; margin-top: 5px; padding: .5em .5em .5em .7em; zoom: 1; }
+#add_new_team .ui-accordion .ui-accordion-icons { padding-left: 2.2em; font-weight:700 }
+#add_new_team .ui-accordion .ui-accordion-noicons { padding-left: .7em; }
+#add_new_team .ui-accordion .ui-accordion-icons .ui-accordion-icons { padding-left: 2.2em; }
+#add_new_team .ui-accordion .ui-accordion-header .ui-accordion-header-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
+#add_new_team .ui-accordion .ui-accordion-content { padding: 15px 5px; border-top: 0; overflow: visible; zoom: 1; }
+#add_new_team .ui-autocomplete {position: absolute;top: 0;left: 0;cursor: default;}
+
+/* Component containers
+----------------------------------*/
+#add_new_team .ui-widget {font-family: Verdana,Arial,sans-serif;font-size: 1.1em;}
+#add_new_team .ui-widget .ui-widget {font-size: 1em;}
+#add_new_team .ui-widget input, #add_new_team .ui-widget select, #add_new_team .ui-widget textarea, #add_new_team .ui-widget button {font-family: Verdana,Arial,sans-serif;font-size: 14px;}
+#add_new_team .ui-widget-content { color: #1e1b1d; }
+#add_new_team .ui-widget-content a { color: #1e1b1d; }
+#add_new_team .ui-widget-header { border: 1px solid #d49768; background: #cb842e; color: #ffffff; font-weight: bold; }
+#add_new_team .ui-widget-header a { color: #ffffff; }
+
+/* Interaction states
+----------------------------------*/
+#add_new_team .ui-state-default, #add_new_team .ui-widget-content .ui-state-default, #add_new_team .ui-widget-header .ui-state-default {font-weight: 700;color: #333;}
+#add_new_team .ui-state-hover, #add_new_team .ui-widget-content .ui-state-hover, #add_new_team .ui-widget-header .ui-state-hover, #add_new_team .ui-state-focus, #add_new_team .ui-widget-content .ui-state-focus, #add_new_team .ui-widget-header .ui-state-focus {color: #333;}
+#add_new_team .ui-state-active, #add_new_team .ui-widget-content .ui-state-active, #add_new_team .ui-widget-header .ui-state-active {border: 1px solid #aaa;/* background: #EEEEEE !important; */color: #333;}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+#add_new_team .ui-icon { width: 16px; height: 16px; background-image: url(../images/rwctm-buttons.png); }
+#add_new_team .ui-widget-content .ui-icon {background-image: url(../images/rwctm-buttons.png); }
+#add_new_team .ui-widget-header .ui-icon {background-image: url(../images/rwctm-buttons.png); }
+#add_new_team .ui-state-default .ui-icon { background-image: url(../images/rwctm-buttons.png); }
+#add_new_team .ui-state-hover .ui-icon, #add_new_team .ui-state-focus .ui-icon {background-image: url(../images/rwctm-buttons.png); }
+#add_new_team .ui-state-active .ui-icon {background-image: url(../images/rwctm-buttons.png); }
+#add_new_team .ui-state-highlight .ui-icon {background-image: url(../images/rwctm-buttons.png); }
+#add_new_team .ui-state-error .ui-icon, #add_new_team .ui-state-error-text .ui-icon {background-image: url(../images/rwctm-buttons.png); }
+/* positioning */
+#add_new_team .ui-icon-triangle-1-e { background-position: -15px -22px }
+#add_new_team .ui-icon-triangle-1-s { background-position: -18px -74px }
+/* Overlays */
+#add_new_team .ui-widget-overlay { background: #aaaaaa; opacity: .3;filter:Alpha(Opacity=30); }
+#add_new_team .ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa; opacity: .3;filter:Alpha(Opacity=30); }
+
+/* Tabs */
+#rwctm_global_settings .ui-helper-hidden,
+#add_new_team #settingcommon .ui-helper-hidden {display: none;}
+#rwctm_global_settings .ui-helper-hidden-accessible,
+#add_new_team #settingcommon .ui-helper-hidden-accessible {border: 0;clip: rect(0 0 0 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}
+#rwctm_global_settings .ui-helper-reset,
+#add_new_team #settingcommon .ui-helper-reset {margin: 0;padding: 0;border: 0;outline: 0;line-height: 1.3;text-decoration: none;font-size: 100%;list-style: none;}
+#rwctm_global_settings .ui-helper-clearfix:before,
+#rwctm_global_settings .ui-helper-clearfix:after,
+#add_new_team #settingcommon .ui-helper-clearfix:before,
+#add_new_team #settingcommon .ui-helper-clearfix:after {content: "";display: table;border-collapse: collapse;}
+#rwctm_global_settings .ui-helper-clearfix:after,
+#add_new_team #settingcommon .ui-helper-clearfix:after {clear: both;}
+#rwctm_global_settings .ui-helper-zfix,
+#add_new_team #settingcommon .ui-helper-zfix {width: 100%;height: 100%;top: 0;left: 0;position: absolute;opacity: 0;filter:Alpha(Opacity=0); /* support: IE8 */}
+#rwctm_global_settings .ui-front,
+#add_new_team #settingcommon .ui-front {z-index: 100;}
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+#rwctm_global_settings .ui-widget-overlay,
+#add_new_team #settingcommon .ui-widget-overlay {position: fixed;top: 0;left: 0;width: 100%;height: 100%;}
+#rwctm_global_settings .ui-tabs,
+#add_new_team #settingcommon .ui-tabs {position: relative;padding: 1.5em;}
+#rwctm_global_settings .ui-tabs .ui-tabs-nav,
+#add_new_team #settingcommon .ui-tabs .ui-tabs-nav {margin: 0;padding: .2em .2em 0;}
+
+#rwctm_global_settings .ui-tabs .ui-tabs-nav li,
+#add_new_team #settingcommon .ui-tabs .ui-tabs-nav li {list-style: none;float: left;position: relative;top: 0;margin: 1px .2em 0 .5em;border-bottom-width: 0;padding: 0;white-space: nowrap;}
+#rwctm_global_settings .ui-tabs .ui-tabs-nav .ui-tabs-anchor,
+#add_new_team #settingcommon .ui-tabs .ui-tabs-nav .ui-tabs-anchor {float: left;padding: .7em 1em;text-decoration: none;}
+#rwctm_global_settings .ui-tabs .ui-tabs-nav li.ui-tabs-active,
+#add_new_team #settingcommon .ui-tabs .ui-tabs-nav li.ui-tabs-active {margin-bottom: -1px;padding-bottom: 1px;}
+#rwctm_global_settings .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+#rwctm_global_settings .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+#rwctm_global_settings .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor,
+#add_new_team #settingcommon .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+#add_new_team #settingcommon .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+#add_new_team #settingcommon .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {cursor: text;}
+#rwctm_global_settings .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+#add_new_team #settingcommon .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {cursor: pointer;}
+#rwctm_global_settings .ui-tabs .ui-tabs-panel,
+#add_new_team #settingcommon .ui-tabs .ui-tabs-panel {display: block;border-width: 0;padding: 1em 1.4em;background: none;}
+
+/* Component containers
+----------------------------------*/
+#rwctm_global_settings .ui-widget,
+#add_new_team #settingcommon .ui-widget {font-family: Arial,Helvetica,sans-serif;font-size: 1em;}
+#rwctm_global_settings .ui-widget .ui-widget,
+#add_new_team #settingcommon .ui-widget .ui-widget {font-size: 1em;}
+#rwctm_global_settings .ui-widget input,
+#rwctm_global_settings .ui-widget select,
+#rwctm_global_settings .ui-widget textarea,
+#rwctm_global_settings .ui-widget button,
+#add_new_team #settingcommon .ui-widget input,
+#add_new_team #settingcommon .ui-widget select,
+#add_new_team #settingcommon .ui-widget textarea,
+#add_new_team #settingcommon .ui-widget button {font-family: Arial,Helvetica,sans-serif;font-size: 1em;}
+#rwctm_global_settings .ui-widget.ui-widget-content,
+#add_new_team #settingcommon .ui-widget.ui-widget-content {border: 1px solid #c5c5c5;}
+#rwctm_global_settings .ui-widget-content,
+#add_new_team #settingcommon .ui-widget-content {border: 1px solid #dddddd;/* background: #ffffff; */color: #333333;}
+#rwctm_global_settings .ui-widget-content a,
+#add_new_team #settingcommon .ui-widget-content a {color: #333333;}
+#rwctm_global_settings .ui-widget-header,
+#add_new_team #settingcommon .ui-widget-header {background: #fff;border-bottom: 1px solid #195281;color: #333333;font-weight: bold;border-radius: 0;}
+#rwctm_global_settings .ui-widget-header a,
+#add_new_team #settingcommon .ui-widget-header a {color: #333333;}
+
+/* Interaction states
+----------------------------------*/
+#rwctm_global_settings .ui-state-default,
+#rwctm_global_settings .ui-widget-content .ui-state-default,
+#rwctm_global_settings .ui-widget-header .ui-state-default,
+#rwctm_global_settings .ui-button,
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+#rwctm_global_settings html .ui-button.ui-state-disabled:hover,
+#rwctm_global_settings html .ui-button.ui-state-disabled:active,
+#add_new_team #settingcommon .ui-state-default,
+#add_new_team #settingcommon .ui-widget-content .ui-state-default,
+#add_new_team #settingcommon .ui-widget-header .ui-state-default,
+#add_new_team #settingcommon .ui-button,
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+#add_new_team #settingcommon html .ui-button.ui-state-disabled:hover,
+#add_new_team #settingcommon html .ui-button.ui-state-disabled:active {border: 1px solid #195281;background: #2271b1;font-weight: 600;color: #5f5f5f;}
+#rwctm_global_settings .ui-state-default a,
+#rwctm_global_settings .ui-state-default a:link,
+#rwctm_global_settings .ui-state-default a:visited,
+#rwctm_global_settings a.ui-button,
+#rwctm_global_settings a:link.ui-button,
+#rwctm_global_settings a:visited.ui-button,
+#rwctm_global_settings .ui-button,
+#add_new_team #settingcommon .ui-state-default a,
+#add_new_team #settingcommon .ui-state-default a:link,
+#add_new_team #settingcommon .ui-state-default a:visited,
+#add_new_team #settingcommon a.ui-button,
+#add_new_team #settingcommon a:link.ui-button,
+#add_new_team #settingcommon a:visited.ui-button,
+#add_new_team #settingcommon .ui-button {color: #ffffff;text-decoration: none;}
+#rwctm_global_settings .ui-state-hover,
+#rwctm_global_settings .ui-widget-content .ui-state-hover,
+#rwctm_global_settings .ui-widget-header .ui-state-hover,
+#rwctm_global_settings .ui-state-focus,
+#rwctm_global_settings .ui-widget-content .ui-state-focus,
+#rwctm_global_settings .ui-widget-header .ui-state-focus,
+#rwctm_global_settings .ui-button:hover,
+#rwctm_global_settings .ui-button:focus,
+#add_new_team #settingcommon .ui-state-hover,
+#add_new_team #settingcommon .ui-widget-content .ui-state-hover,
+#add_new_team #settingcommon .ui-widget-header .ui-state-hover,
+#add_new_team #settingcommon .ui-state-focus,
+#add_new_team #settingcommon .ui-widget-content .ui-state-focus,
+#add_new_team #settingcommon .ui-widget-header .ui-state-focus,
+#add_new_team #settingcommon .ui-button:hover,
+#add_new_team #settingcommon .ui-button:focus {border: 1px solid #cccccc;background: #ededed;font-weight: 600;color: #2b2b2b;}
+#rwctm_global_settings .ui-state-hover a,
+#rwctm_global_settings .ui-state-hover a:hover,
+#rwctm_global_settings .ui-state-hover a:link,
+#rwctm_global_settings .ui-state-hover a:visited,
+#rwctm_global_settings .ui-state-focus a,
+#rwctm_global_settings .ui-state-focus a:hover,
+#rwctm_global_settings .ui-state-focus a:link,
+#rwctm_global_settings .ui-state-focus a:visited,
+#rwctm_global_settings a.ui-button:hover,
+#rwctm_global_settings a.ui-button:focus,
+#add_new_team #settingcommon .ui-state-hover a,
+#add_new_team #settingcommon .ui-state-hover a:hover,
+#add_new_team #settingcommon .ui-state-hover a:link,
+#add_new_team #settingcommon .ui-state-hover a:visited,
+#add_new_team #settingcommon .ui-state-focus a,
+#add_new_team #settingcommon .ui-state-focus a:hover,
+#add_new_team #settingcommon .ui-state-focus a:link,
+#add_new_team #settingcommon .ui-state-focus a:visited,
+#add_new_team #settingcommon a.ui-button:hover,
+#add_new_team #settingcommon a.ui-button:focus {color: #2b2b2b;text-decoration: none;}
+#rwctm_global_settings .ui-visual-focus,
+#add_new_team #settingcommon .ui-visual-focus {box-shadow: 0 0 3px 1px rgb(94, 158, 214);}
+#rwctm_global_settings .ui-state-active,
+#rwctm_global_settings .ui-widget-content .ui-state-active,
+#rwctm_global_settings .ui-widget-header .ui-state-active,
+#rwctm_global_settings a.ui-button:active,
+#rwctm_global_settings .ui-button:active,
+#rwctm_global_settings .ui-button.ui-state-active:hover,
+#add_new_team #settingcommon .ui-state-active,
+#add_new_team #settingcommon .ui-widget-content .ui-state-active,
+#add_new_team #settingcommon .ui-widget-header .ui-state-active,
+#add_new_team #settingcommon a.ui-button:active,
+#add_new_team #settingcommon .ui-button:active,
+#add_new_team #settingcommon .ui-button.ui-state-active:hover {border: 1px solid #195281;background: #ffffff;font-weight: 600;color: #000;}
+#rwctm_global_settings .ui-icon-background,
+#rwctm_global_settings .ui-state-active .ui-icon-background,
+#add_new_team #settingcommon .ui-icon-background,
+#add_new_team #settingcommon .ui-state-active .ui-icon-background {border: #003eff;background-color: #ffffff;}
+#rwctm_global_settings .ui-state-active a,
+#rwctm_global_settings .ui-state-active a:link,
+#rwctm_global_settings .ui-state-active a:visited,
+#add_new_team #settingcommon .ui-state-active a,
+#add_new_team #settingcommon .ui-state-active a:link,
+#add_new_team #settingcommon .ui-state-active a:visited {color: #000;text-decoration: none;}

@@ -1,0 +1,1137 @@
+/**
+ * Admin Styles
+ *
+ * This CSS file contains styles specific to the admin section of the
+ * "RWC Team Members" plugin. These styles enhance the visual appearance
+ * and user experience of the plugin's backend pages, ensuring a cohesive and
+ * user-friendly interface for administrators.
+ *
+ * @package RWC Team Members - v0.5 - 25 July, 2024
+ */
+.wrap .rwctm-clear{clear:both}
+#add_new_team{width:100%}
+/* #add_new_team.postbox-container h2{font-size:24px;font-weight:700} */
+#add_new_team h2 a.add-new-h2{font-style:normal;font-size:14px;font-weight:700}
+#add_new_team #rwctm_new{display:none}
+.wrap #add_new_team h2 span#rwctm-loading-image{background:url(../images/ajax-loader.gif) no-repeat 0 0;margin:-3px 10px;width:96px;height:20px;display:none}
+#add_new_team #rwctm_edit_form #form-messages{position:relative;padding:.75rem 1.25rem;margin-bottom:2px;border-radius:.25rem;border:1px solid rgba(36,241,6,0.46);background-color:#327432;box-shadow:0 0 2px #259c08;color:#e3ffe2;font-size:17px;text-shadow:1px 1px 2px #00040a;transition:.5s;cursor:pointer;display:none}
+#add_new_team .success:before{content:"";position:absolute;width:0;height:calc(100% - 44px);border-left:1px solid;border-right:2px solid;border-bottom-right-radius:3px;border-top-right-radius:3px;left:0;top:50%;transform:translate(0,-50%);height:20px}
+#add_new_team .success > .start-icon{margin-right:5px;min-width:20px;text-align:center}
+#add_new_team .success .greencross{font-size:18px;color:#e3ffe2;text-shadow:none;margin-top:3px}
+#add_new_team .success .rwctm_close{float:right;position:absolute;top:0;right:0;font-size:1.5rem;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.5;padding:.6rem 1.25rem;background-color:transparent;border:0}
+#add_new_team .success .rwctm_close:hover{opacity:1}
+#add_new_team .success .rwctm_close:not(:disabled):not(.disabled){cursor:pointer}
+
+/* RWC Team Members Lists */
+#add_new_team .team_list{position:relative;display:block;margin-top:15px}
+#add_new_team .team_list .subsubsub{margin-bottom:8px;padding:0 10px;font-size:14px;font-weight:600;background:#fff;color:#1d2327;box-shadow:1px 1px 2px 1px #cbc8c8}
+#add_new_team .team_list .subsubsub li{position:relative;box-shadow:1px 0 0 0 #c9c9c9;padding:8px 5px 8px 15px}
+#add_new_team .team_list .subsubsub li:first-child{padding-left:5px}
+#add_new_team .team_list .subsubsub li:last-child{box-shadow:none}
+#add_new_team .team_list .subsubsub li span.count{width:20px;height:20px;line-height:20px;margin:0 10px 0 2px;background:#1d2327;color:#fff;border:1px solid #1d2327;border-radius:50%;display:inline-block;text-align:center}
+#add_new_team .team_list .subsubsub li.publish{color:#1fa750}
+#add_new_team .team_list .subsubsub li.publish span.count{background:#23bd5a;border-color:#5baf79;color:#fff}
+#add_new_team .team_list .subsubsub li.unpublish{color:#dca80c}
+#add_new_team .team_list .subsubsub li:last-child span.count{margin-right:0}
+#add_new_team .team_list .subsubsub li.unpublish span.count{background:#f2be1d;border-color:#dbac1a;color:#fff}
+#add_new_team .team_list .button.button-del,
+#add_new_team .team_list .button.update-all{position:relative;margin:-7px 0 10px 10px;padding:0 0 0 24px;background-color:#d9534f;border-color:#d43f3a;color:#fff;font-weight:500;font-size:14px;width:74px;display:none}
+#add_new_team .team_list .button.update-all{background-color:#2271b1;border-color:#1a5889;margin-right:-5px;width:81px}
+#add_new_team .team_list .button.button-del:hover{background-color:#d43f3a}
+#add_new_team .team_list .button.update-all:hover{background-color:#1a5889}
+#add_new_team .team_list .button.button-del:before,
+#add_new_team .team_list .button.update-all:before{content:"\f153";font-family:dashicons;position:absolute;left:5px;top:0;color:#fff}
+#add_new_team .team_list .button.update-all:before{content:"\f463"}
+#add_new_team .team_list #rwctm_list{border-collapse:collapse;margin:0 0 1rem;text-align:left;color:#212529;background:#fff;box-shadow:0 0 4px 1px #c0c0d4;width:100%}
+#add_new_team .team_list table thead tr{background:#2271b1;border-bottom:4px solid #174d78}
+#add_new_team .team_list table td,
+#add_new_team .team_list table th{padding:30px 15px 15px;vertical-align:top}
+#add_new_team .team_list table thead th{width:auto;font-size:18px;border:none;padding-bottom:30px;font-weight:500;color:#fff}
+#add_new_team .team_list table thead th:first-child{border:none}
+#add_new_team .team_list table tbody tr{background-color:#FFFFFF;margin-bottom:10px;border-bottom:4px solid #eceffa}
+#add_new_team .team_list table tbody:last-child tr{border-bottom-width:1px}
+#add_new_team .team_list table tbody td{position:relative;color:#007193;font-size:16px;font-weight:normal;height:50px}
+#add_new_team .team_list table tbody .alt td{background:#F4F6FC}
+#add_new_team .team_list table tbody td:first-child{border-left:none}
+#add_new_team .team_list table tbody tr:last-child td{border-bottom:none}
+#add_new_team .team_list table tbody td.team_name div{padding-bottom:5px;cursor:pointer}
+#add_new_team .team_list table tbody td.team_name{width:42%}
+#add_new_team .team_list table tbody td.team_name span:first-of-type{border:none;padding-left:0}
+#add_new_team .team_list table tbody td.team_name span{font-size:14px;cursor:pointer;border-left:1px solid #ddd;color:#0074a2;padding-left:5px}
+#add_new_team .team_list table tbody td.team_name span:hover{color:#2ea2cc}
+#add_new_team .team_list table tbody td.shortcode,
+#add_new_team .team_list table tbody td.rwctm-status{text-align:left}
+#add_new_team .team_list table tbody td.shortcode{width:250px;padding:30px 0 15px}
+#add_new_team .team_list table tbody td .ot_tooltip{position:relative;width:90%;display:inline-block;top:-7px}
+#add_new_team .team_list table tbody td .ot_tooltip .ot_tooltip_text{visibility:hidden;width:190px;background-color:#555;color:#fff;font-size:14px;text-align:center;border-radius:6px;padding:5px;position:absolute;z-index:1;bottom:120%;left:50%;margin-left:-100px;opacity:0;transition:opacity .3s}
+#add_new_team .team_list table tbody td .ot_tooltip .ot_tooltip_text::after{content:"";position:absolute;top:100%;left:50%;margin-left:-5px;border-width:5px;border-style:solid;border-color:#555 transparent transparent}
+#add_new_team .team_list table tbody td .ot_tooltip:hover .ot_tooltip_text{visibility:visible;opacity:1}
+#add_new_team .team_list table tbody td input.rwctm_shortcode{margin:0;padding:6px 0;border-radius:0;background:#f0f0f1;vertical-align:middle;font-size:16px;font-weight:500;width:100%;max-width:100%;border:.5px solid #ddd;border-bottom:3px solid #bbb;text-align:center}
+#add_new_team .team_list .regen_shortcode{position:relative;display:inline-block;margin:0;padding:0;font-size:18px}
+#add_new_team .team_list .regen_shortcode input{width:auto;height:40px;line-height:38px;padding:0 10px 0 30px}
+#add_new_team .team_list .regen_shortcode::before{content:"\f150";font-family:dashicons;position:absolute;left:7px;top:11px;color:#fff}
+
+/* Reset Select */
+#add_new_team .team_list table tbody td .temp_choice select{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;outline:0;box-shadow:none;border:.5px solid #ddd;border-bottom:3px solid #bbb;background:#f1f1f1;background-image:none}
+
+/* Remove IE arrow */
+#add_new_team .team_list table tbody td .temp_choice select::-ms-expand{display:none}
+#add_new_team .team_list table tbody td .temp_choice{position:relative;top:-3px;display:flex;width:9em;height:2.4em;line-height:2.4;background:#f1f1f1;color:#d2d2d2;overflow:hidden;border-radius:.25em}
+#add_new_team .team_list table tbody td .temp_choice select{flex:1;padding:0 0 0 .7em;color:#32373c;cursor:pointer;font-size:16px}
+
+/* Arrow */
+#add_new_team .team_list table tbody td .temp_choice::after{content:'\f140';font-family:dashicons;font-size:26px;position:absolute;height:47px;top:-12px;right:0;padding:0 .2em;background:#2271b1;border-bottom:3px solid #1b5c91;cursor:pointer;pointer-events:none;-webkit-transition:.25s all ease;-o-transition:.25s all ease;transition:.25s all ease}
+
+/* Transition */
+#add_new_team .team_list table tbody td .temp_choice:hover::after{color:#0d2e48}
+#add_new_team .team_list table tbody td .temp_choice select option{background:#f1f1f1;font-size:14px;color:#2271b1}
+#add_new_team .team_list table tbody td span.status{position:relative;border-radius:30px;background:#cff6dd;color:#1fa750;height:25px;display:inline-block;line-height:24px;text-align:right}
+#add_new_team .team_list table tbody td span.status.active{width:70px;padding-right:10px}
+#add_new_team .team_list table tbody td span.status.inactive{padding:0 10px 0 25px;background:#fdf5dd;color:#cfa00c}
+#add_new_team .team_list table tbody td span.inactive:after{background:#f2be1d}
+#add_new_team .team_list table tbody td span.status:after{position:absolute;top:8px;left:10px;width:10px;height:10px;content:'';border-radius:50%}
+#add_new_team .team_list table tbody td span.active:after{background:#23bd5a}
+#add_new_team .team_list table tbody td .duplicate_team{background:url(../images/duplicate.png) no-repeat 0 0;position:absolute;top:32px;left:15px;width:22px;height:22px;cursor:pointer}
+#add_new_team .team_list table tbody td #copy_team.duplicate_team{left:unset;margin-left:11px;margin-top:-2px}
+#add_new_team .team_list table tbody td.rwctm_notice{width:40%}
+#add_new_team .team_list table tbody td.rwctm_notice span{font-size:13px;color:#778899}
+#add_new_team .team_list table tbody td.rwctm_notice span strong{font-weight:700}
+#add_new_team .team_list table tbody td.no_templates{position:relative}
+#add_new_team #teamnamediv{width:100%;border-radius:5px;margin:0 0 30px;padding:0;line-height:0;display:inline-block}
+#add_new_team .addnewteamwrap{width:98%;background:#fff;box-shadow:0 0 4px 1px #c0c0d4;margin:0;padding:10px;display:inline-block}
+#add_new_team .team_list table tbody td .wp-color-result-text{height:28px;line-height:28px}
+/* //RWC Team Member Lists */
+
+/* RWC Team Member Activity */
+#add_new_team .teamnamewrap,
+#add_new_team .teamactivitywrap,
+#add_new_team .teamcolumnwrap,
+#add_new_team .settingcolumnwrap{margin:10px;padding:0 18px}
+#add_new_team .teamactivitywrap h3{padding:10px 1px 15px}
+#add_new_team .teamcolumnwrap{position:relative;display:grid}
+#teamcolumndiv .accordion-expand-holder{position:absolute;top:40px;right:25px}
+#teamcolumndiv .accordion-expand-holder .expand,
+#teamcolumndiv .accordion-expand-holder .collapse{color:#444444;text-transform:uppercase;cursor:pointer;padding:5px 10px}
+#add_new_team .teamnamewrap{border-bottom:1px solid #CCC;margin-bottom:30px}
+#add_new_team #title{width:50%;display:block;margin:10px 0 20px;padding:7px 14px;line-height:30px;font-size:18px;box-shadow:2px 2px 4px 0 rgb(29 35 39 / 16%);border:1px solid #d1d1d1}
+#add_new_team #teamactivitydiv #activity_edititem{border:1px solid #ddd;margin-bottom:10px;width:100%}
+#add_new_team #teamactivitydiv #activity_edititem tr.smheader th{background-color:#F3F3F3;padding:15px 10px;border-bottom:1px solid #ddd;border-left:1px solid #ddd;font-size:14px;font-weight:700;line-height:18px;color:#333333}
+#add_new_team #teamactivitydiv #activity_edititem tr.activitybody td{background-color:#fff;padding:10px;border-left:1px solid #ddd;border-bottom:1px solid #ddd;line-height:48px}
+#add_new_team #teamactivitydiv #activity_edititem tr.smheader th:first-child,
+#add_new_team #teamactivitydiv #activity_edititem tr.activitybody td:first-child{border-left:none}
+#add_new_team #teamactivitydiv tr.activitybody td input[type="text"]{display:block;width:auto;padding:8px 16px;line-height:25px;font-size:14px;font-weight:500;border-radius:6px;color:#6a7283;border:1px solid #CDD9ED;background:#fff;transition:border .3s ease}
+#add_new_team #teamactivitydiv tr.activitybody td input[type="text"]:focus{box-shadow:none;border:1px solid #678efe}
+#add_new_team #teamactivitydiv tr.activitybody td > span,
+#add_new_team #teamactivitydiv tr.activitybody td input[type="text"]{white-space:nowrap;display:inline-block}
+#add_new_team #teamactivitydiv tr.activitybody td .select{cursor:pointer;display:inline-block;position:relative;margin-left:6px;padding:0 3px;height:30px;line-height:30px;font-size:14px;border-radius:6px;color:#6a7283;border:1px solid #CDD9ED;transition:border .3s ease}
+#add_new_team #teamactivitydiv tr.activitybody td .select .s-hidden{visibility:hidden}
+#add_new_team #teamactivitydiv tr.activitybody td .select .styledSelect{position:absolute;top:0;right:0;bottom:0;left:0;padding:0 10px;font-weight:500;display:inline-block;border-radius:3px;box-shadow:0 1px 0 rgb(0 0 0 / 5%),inset 0 1px 0 rgb(255 255 255 / 80%);background-color:#f9f9f9;background-image:linear-gradient(to bottom,#fefefe,#f2f2f2);background-repeat:repeat-x;border:1px solid #b8b8b8}
+#add_new_team #teamactivitydiv tr.activitybody td .select .styledSelect.social{background:#415DE5;background-image:linear-gradient(to bottom,#6178e6,#415DE5);color:#fff;border:1px solid #364ebf;box-shadow:0 1px 0 rgb(65 93 229 / 5%),inset 0 1px 0 rgb(65 93 229 / 80%)}
+#add_new_team #teamactivitydiv tr.activitybody td .select .styledSelect.status{background:#61ECFB;background-image:linear-gradient(to bottom,#b3eef5,#61ECFB);color:#286167;border:1px solid #54c5d1;box-shadow:0 1px 0 rgb(97 236 251 / 5%),inset 0 1px 0 rgb(97 236 251 / 80%)}
+#add_new_team #teamactivitydiv tr.activitybody td .select .styledSelect.sector{background:#783EC0;background-image:linear-gradient(to bottom,#844acd,#783EC0);color:#fff;border:1px solid #6835a7;box-shadow:0 1px 0 rgb(120 62 192 / 5%),inset 0 1px 0 rgb(120 62 192 / 80%)}
+#add_new_team #teamactivitydiv tr.activitybody td .select .styledSelect:after{content:"";width:0;height:0;border:5px solid transparent;border-color:black transparent transparent;position:absolute;top:13px;right:10px}
+#add_new_team #teamactivitydiv tr.activitybody td .select .styledSelect.social:after,
+#add_new_team #teamactivitydiv tr.activitybody td .select .styledSelect.sector:after{border-color:#ffffff transparent transparent}
+#add_new_team #teamactivitydiv tr.activitybody td .select .styledSelect:active,
+#add_new_team #teamactivitydiv tr.activitybody td .select .styledSelect.active{background-color:#eef4ff}
+#add_new_team #teamactivitydiv tr.activitybody td .select .options{display:none;position:absolute;top:100%;right:0;left:-1px;z-index:999;margin:0;padding:0;list-style:none;border:1px solid #cdd9ed;background-color:#fff;-webkit-box-shadow:0 1px 2px rgb(0 0 0 / 20%);-moz-box-shadow:0 1px 2px rgba(0,0,0,0.2);box-shadow:0 1px 2px rgb(0 0 0 / 20%);width:calc(100% + 50px)}
+#add_new_team #teamactivitydiv tr.activitybody td .select .options li{margin:0;padding:0 10px;height:32px;line-height:32px;border-bottom:1px solid #c3c4c7}
+#add_new_team #teamactivitydiv tr.activitybody td .select .options li:hover{background-color:#39f;color:#fff}
+#add_new_team #teamactivitydiv tr.activitybody td .select .options li:last-child{border-bottom:none}
+#add_new_team #teamactivitydiv tr.activitybody td .select .options li.active{background-color:#92c836;color:#fff}
+#add_new_team .element-input .selectize-control.single,
+#add_new_team .element-input .selectize-control.multi,
+#add_new_team #settingcommon .team-input .selectize-control.single{width:69.2%;margin:0 2px 10px;display:inline-block}
+#add_new_team #settingcommon .team-input .selectize-control.single{width:18%}
+#add_new_team #settingcommon .team-input #max-column .selectize-control.single{width:150px;margin:0;display:table}
+#add_new_team #teamactivitydiv tr.activitybody td > span{text-align:center;padding:8px 12px;font-size:14px;line-height:25px;color:#99A3BA;background:#eef4ff;border:1px solid #CDD9ED;display:inline-block;transition:background .3s ease,border .3s ease,color .3s ease}
+#add_new_team #teamactivitydiv tr.activitybody td input[type="text"]{position:relative;z-index:1;margin-top:0;margin-bottom:0}
+#add_new_team #teamactivitydiv tr.activitybody td > span:first-child,
+#add_new_team #teamactivitydiv tr.activitybody td input[type="text"]:first-child{border-radius:6px 0 0 6px}
+#add_new_team #teamactivitydiv tr.activitybody td > span:last-child,
+#add_new_team #teamactivitydiv tr.activitybody td input[type="text"]:last-child{border-radius:0 6px 6px 0}
+#add_new_team #teamactivitydiv tr.activitybody td > span:not(:first-child),
+#add_new_team #teamactivitydiv tr.activitybody td input[type="text"]:not(:first-child){border-radius:0 6px 6px 0;margin-left:-1px}
+#add_new_team #teamactivitydiv tr.activitybody td:focus-within > span{color:#fff;background:#678efe;border-color:#275efe}
+#add_new_team #teamactivitydiv tr.activitybody td input[type="text"]::placeholder,
+#add_new_team .element-input input[type="text"]::placeholder,
+#add_new_team .element-input input[type="number"]::placeholder,
+#add_new_team .element-input textarea::placeholder,
+#add_new_team #settingcommon .team-input input[type="text"]::placeholder,
+#add_new_team #settingcommon .team-input input[type="number"]::placeholder,
+#add_new_team #settingcommon .team-input textarea::placeholder{color:#CBD1DC}
+#add_new_team #teamactivitydiv #activity_edititem tr.activitybody td span#remActivity,
+#add_new_team #teamactivitydiv #activity_edititem tr.activitybody td span#remDisable{cursor:pointer;background:transparent;border:none;margin:0;padding:0;color:#444444;display:block}
+#add_new_team #teamactivitydiv #activity_edititem tr.activitybody td span#remDisable{color:#bbbbbb;cursor:auto}
+#add_new_team #teamactivitydiv #activity_edititem tr.activitybody td span#remActivity::after,
+#add_new_team #teamactivitydiv #activity_edititem tr.activitybody td span#remDisable::after{content:"\f182";font-family:dashicons;font-weight:400;font-size:24px;position:absolute;top:50%;left:50%;border:1px solid #c7c7c7;border-radius:4px;box-shadow:inset 0 0 3px 1px rgb(0 0 0 / 10%);padding:4px;transform:translate(-50%,-50%)}
+#add_new_team #teamactivitydiv #activity_edititem tr.smheader th{text-align:center}
+#add_new_team #teamactivitydiv #activity_edititem tr.activitybody td{cursor:move}
+#add_new_team input#rwctm_add_new,
+#add_new_team #rwctm_upactivity,
+#add_new_team #rwctm_addactivity{float:right;margin-top:10px;margin-right:10px}
+#add_new_team input#rwctm_add,
+#add_new_team input#rwctm_edit{margin:10px 10px 20px}
+/* //RWC Team Members Activity */
+
+/* Team Member Preview */
+#add_new_team #teamdisplaydiv{background:#fff;margin:0 0 30px;padding:10px;line-height:5px;position:relative}
+#add_new_team #teamdisplaydiv h3{position:relative;font-size:24px;margin-top:15px;padding:10px}
+#add_new_team #teamdisplaydiv h3 span#editTeam{position:absolute;top:0;right:24px;background:#22313f;margin:0;padding:0 10px 0 0;color:#fff;font-size:14px;font-weight:600;text-align:right;width:130px;height:36px;line-height:33px;border:1px solid #1d2327;border-radius:5px}
+#add_new_team #teamdisplaydiv h3 #editTeam:hover{background:#646970}
+#add_new_team #teamdisplaydiv h3 span#editTeam:before{content:"\f186";font-family:'dashicons';position:absolute;left:1px;top:50%;font-size:20px;width:26px;height:32px;transform:translateY(-50%)}
+/* //Team Member Preview */
+
+/* Team Columns */
+#add_new_team #teamcolumndiv{float:left;margin:0;padding-bottom:30px;line-height:5px;background:#fff;box-shadow:0 0 4px 1px #c0c0d4;width:100%;position:relative}
+#teamcolumndiv #addButtons{position:relative;clear:both;margin-bottom:5px}
+#teamcolumndiv #addButtons a#addMember{padding:0 10px 0 30px;font-size:16px;height:36px;line-height:32px;font-weight:600}
+#teamcolumndiv #addButtons a#addMember:before{content:"\f502";font-family:dashicons;position:absolute;top:50%;left:6px;margin:0;font-size:20px;display:inline-block;line-height:1;transform:translateY(-50%)}
+#teamcolumndiv #sortable_column{margin-left:-5px;margin-top:5px}
+#teamcolumndiv #sortable_column .member_details h3.mtitle{margin:3px 1px;border-left:10px solid #4f94d4}
+#teamcolumndiv .member_details{float:left;margin:5px;position:relative}
+#teamcolumndiv .member_details h4{margin:0;padding:10px 0 13px 2px;font-size:15px}
+#teamcolumndiv .member_details span.column_hide,
+#teamcolumndiv .member_details span.column_show{position:absolute;top:0;right:42px;padding:7px 14px;border-right:2px solid #cbcbcb;display:inline-block;cursor:pointer;z-index:9999}
+#teamcolumndiv .member_details span.column_hide:before,#teamcolumndiv .member_details span.column_hide:after{content:"";position:absolute;top:-1px;background:#e7e7e7;border-top:1px solid #ccc}
+#teamcolumndiv .member_details span.column_hide:before{left:-8px;box-shadow:1px 0 1px 0 rgb(92 92 92 / 30%);width:4px;height:36px;border-top-right-radius:3px;z-index:9999}
+#teamcolumndiv .member_details span.column_hide:after{left:5px;border-left:1px solid #ccc;border-top:1px solid #ccc;box-shadow:-9px 0 0 4px #ffffff;width:5px;height:36px;border-top-left-radius:3px}
+#teamcolumndiv .member_details span.column_hide .dashicons,
+#teamcolumndiv .member_details span.column_show .dashicons,
+#teamcolumndiv .member_details span#delDisable .dashicons,
+#teamcolumndiv .member_details span#delMember .dashicons{font-size:24px}
+#teamcolumndiv .member_details span.inactive{cursor:auto!important;opacity:.3}
+#teamcolumndiv .member_details span#delDisable,
+#teamcolumndiv .member_details span#delMember{position:absolute;top:0;right:8px;padding:7px;border-left:1px solid #f9f9f9;display:inline-block;z-index:9999}
+#teamcolumndiv .member_details span#delDisable{opacity:.3}
+#teamcolumndiv .member_details span#delMember{cursor:pointer}
+#teamcolumndiv .element-input h4{margin:0;padding:5px 10px 15px;font-weight:700;color:#555555}
+#teamcolumndiv .member_details input#upload_image{margin-left:5px}
+#teamcolumndiv .member_details img.preview_image{background:#F1F1F1;width:50%;height:auto;padding:24px 5px 5px;border:1px solid #CCC}
+#teamcolumndiv .member_details span#remove_image{background:url(../images/rwctm-buttons.png) no-repeat -272px -89px;position:absolute;width:24px;height:24px;margin:1px 0 0 -28px;cursor:pointer}
+#teamcolumndiv .element-input input.medium{width:224px}
+#teamcolumndiv .element-input input.checktext{width:204px}
+#teamcolumndiv .element-input input.in_small{width:137px}
+#teamcolumndiv .element-input input[type=text].in_double_one{width:180px;margin-left:-138px;padding-left:10px;padding-right:10px;background:#eef4ff;color:#99A3BA;margin-right:0;border-right:0;border-top-right-radius:0;border-bottom-right-radius:0}
+#teamcolumndiv .element-input input[type=text].in_double_two{width:184px;margin-left:0;padding-left:10px;border-top-left-radius:0;border-bottom-left-radius:0}
+#teamcolumndiv .element-input input[type=text].in_small{width:65px}
+#teamcolumndiv .ed_button.button.button-small{width:auto;margin-bottom:2px}
+#teamcolumndiv .element-input input.tickbox{border:1px solid #aaa!important}
+#teamcolumndiv .element-input .rwctm-editor-bottom{position:relative;background:#fff;width:50px;height:20px;top:4px;left:-49px;display:inline-block}
+#teamcolumndiv .element-input textarea[id=member_desc],
+#teamcolumndiv .element-input textarea[id=short_bio],
+#teamcolumndiv .element-input textarea[id=tag_line]{resize:none;display:block;margin:0 0 20px 10px;border-radius:5px;border:1px solid #ccc;width:96%}
+#teamcolumndiv .element-input input[type=text]:focus,
+#teamcolumndiv .element-input input[type=number]:focus,
+#teamcolumndiv .element-input textarea:focus{box-shadow:none;border-color:#72aee6}
+#teamcolumndiv .element-input hr{width:490px;border-top:1px solid #fbfbfb;margin:0.5em auto 20px;box-shadow:0 -1px 0 0 rgb(145 145 145 / 60%);}
+#teamcolumndiv .member_details{background:#e7e7e7;width:525px;padding:5px!important;border:1px solid #ccc!important;border-radius:3px;box-shadow:1px 1px 2px 1px rgb(83 154 177 / 30%)}
+#teamcolumndiv .element-input{background:#F9F9F9;width:502px;margin-left:1px!important;padding:10px;border:1px solid #fff!important;cursor:auto}
+#add_new_team .member_details h3.mtitle,#add_new_team .member_advance h3.mtitle{background:#FFFFFF;border:none;position:relative;border-radius:4px;background-color:#fff!important;box-shadow:0 0 0 1px #ececec;opacity:1;transition:box-shadow 0.2s,opacity .4s}
+#add_new_team .member_details h3.mtitle.ui-accordion-header-active,#add_new_team .member_advance h3.mtitle.ui-accordion-header-active{box-shadow:none;border-bottom-left-radius:0;border-bottom-right-radius:0}
+#add_new_team .ui-accordion .ui-accordion-content{margin-top:-6px;position:relative;border-top:0!important;border-left:10px solid #4f94d4!important;border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:0!important}
+#add_new_team .member_details h3.mtitle:hover,
+#add_new_team .member_advance h3.mtitle:hover{box-shadow:0 4px 10px 0 rgba(0, 0, 0, 0.11);}
+#teamcolumndiv .element-input label.input-title,
+#add_new_team .element-input label.input-check,
+#teamcolumndiv .element-input label.input-title-check{color:#555555;margin:0;padding:0 10px;float:left;font-size:14px;width:250px;height:35px;line-height:35px}
+#teamcolumndiv .element-input label.input-title.mb-section,
+#teamcolumndiv .element-input label.input-title.mb-status{width:25%}
+#teamcolumndiv .element-input label.input-title:after{content:"";border-bottom:1px dashed #c9c9c9;width:100%;display:block;margin:-1px 0 0}
+#teamcolumndiv .element-input label.input-title.double-text:after{width:44%}
+#teamcolumndiv .element-input label.input-title.label-lg{width:315px}
+#add_new_team .element-input table tr.team-input th label.input-title::after{border:none}
+#add_new_team .element-input span.star_mark{float:right;margin:5px 10px 0 5px}
+#teamcolumndiv .element-input label.input-image{color:#555555;margin-top:1px;padding:7px 10px;float:left;font-size:14px;width:120px}
+#teamcolumndiv .element-input #enable_sp_price{display:none}
+#add_new_team .element-input input.medium,
+#teamcolumndiv .element-input input.in_small,
+#add_new_team .element-input input.tickbox{padding:3px 4px;border-radius:5px;border:1px solid #ccc}
+#add_new_team .element-input input.medium,
+#teamcolumndiv .element-input input.in_small{margin:0 2px 10px}
+#add_new_team .element-input select.font-dir{margin:2px 2px 10px;padding:0 10px;border-radius:5px;border:1px solid #ccc}
+#add_new_team .element-input input.tickbox{margin:7px 2px 10px}
+#add_new_team .element-input table{width:99.5%}
+#add_new_team .element-input table tr.team-header,#add_new_team .element-input table tr.team-input{background-color:#fff;display:block;border:none}
+#add_new_team .element-input table tr.team-header{background:#f9f9f9;position:relative;margin:30px 0 10px}
+#add_new_team .element-input table tr:first-child{margin-top:-10px}
+#add_new_team .element-input table tr.team-header:after{content:"";position:absolute;left:0;bottom:8px;border-bottom:2px solid #dcdcde;width:100%}
+#add_new_team .element-input table tr.team-input{box-shadow:1px 1px 3px 0 #dcdcde}
+#add_new_team .element-input table tr.team-input th{padding:5px 0}
+#add_new_team .element-input table tr.team-input th label.input-title{font-size:12px;width:200px}
+#add_new_team .element-input table tr.team-header td{color:#23282d;font-weight:700;margin:10px 0;padding:5px 10px;font-size:14px;background:#dcdcde;display:inline-block}
+#add_new_team .element-input table tr td{height:auto;padding:5px 10px 0}
+#teamcolumndiv .button.button-small,
+#settingcolumn.button.button-small{width:50px}
+/* //Team Column */
+
+/* RWC Team Members Settings settingcolumndiv */
+#add_new_team #settingcommon{margin:0 0 10px;line-height:24px}
+#add_new_team #settingcommon .cs-inactive,#add_new_team #settingcommon .cs-active{position:absolute;right:31px;top:24px;font-size:32px;color:#fff;text-align:center;background:#2271b1;border:1px solid #195281;width:48px;height:38px;line-height:38px;cursor:pointer}
+#add_new_team #settingcommon .common-settings{border:1px solid #195281;margin:-1px 0 0}
+#add_new_team #settingcommon .common-settings,#add_new_team #settingcommon .cs-inactive{display:none}
+#add_new_team #settingcommon .team-input{margin-bottom:10px}
+#add_new_team #settingcommon .team-input h4{margin:20px 0 10px;padding:0 0 5px;font-size:14px;border-bottom:1px dashed #c3c3c3}
+#add_new_team #settingcommon .team-input .rwctm_notice{background:#F3F7FA;color:#606c41;font-size:12px;font-weight:400;margin:0 0 0 230px;padding:10px 20px;display:block;border-left:10px solid #656e74;border-radius:25px;box-shadow:4px 0 0 1px #656e74;transition:all .3s}
+#add_new_team #settingcommon .team-input h4:first-child{margin-top:0}
+#add_new_team #settingcommon .team-input .team_options{position:relative;margin:0 0 30px}
+#add_new_team #settingcommon .team-input .team_options.thumb_desig,
+#add_new_team #settingcommon .team-input .team_options.thumb_depart,
+#add_new_team #settingcommon .team-input .team_options.thumb_smicon,
+#add_new_team #settingcommon .team-input .team_options.member_desig,
+#add_new_team #settingcommon .team-input .team_options.member_depart,
+#add_new_team #settingcommon .team-input .team_options.member_smicon{margin-bottom:10px}
+#add_new_team #settingcommon .team-input .team_options .multicheck-item{display:inline}
+/* #add_new_team #settingcommon .team-input .team_options.ticker_dates{background:#f1f1f1;margin:0 15px 30px;padding:15px 30px} */
+#add_new_team #settingcommon .team-input .team_options .rwtm-badge{position:absolute;left:0;top:-2px;background:rgb(0 115 170 / 80%);color:#f1f1f1;width:26px;height:12px;line-height:12px;text-align:center;text-transform:lowercase;font-size:10px;border:1px solid rgb(0 86 128 / 43%);box-shadow:1px 1px 4px 1px rgb(0 86 128 / 46%);border-radius:5px}
+#add_new_team #settingcommon .team-input .show_icons{margin-bottom:5px}
+#add_new_team #settingcommon .team-input .ticker_icons,
+#add_new_team #settingcommon .team-input .upload-input,
+#add_new_team #settingcommon .team-input .scroll_speed,
+#add_new_team #settingcommon .team-input .scroll_start,
+#add_new_team #settingcommon .team-input .delay_timer,
+#add_new_team #settingcommon .team-input .fadein_speed,
+#add_new_team #settingcommon .team-input .typo_speed{background:#f1f1f1;margin:0;padding:30px}
+#add_new_team #settingcommon .team-input .start_right{background:#f1f1f1;margin:0;padding:15px 30px 0}
+#add_new_team #settingcommon .team-input .upload-input{background:#fbe4e4;padding:10px 30px}
+#add_new_team #settingcommon .team-input .imgmax_width,
+#add_new_team #settingcommon .team-input .imgmin_width{background:#e7d7d7;margin:0}
+#add_new_team #settingcommon .team-input .scroll_speed,
+#add_new_team #settingcommon .team-input .imgmax_width,
+#add_new_team #settingcommon .team-input .imgmin_width{padding:15px 30px}
+#add_new_team #settingcommon .team-input .imgmin_width{padding-bottom:30px}
+#add_new_team #settingcommon .team-input .scroll_start,
+#add_new_team #settingcommon .team-input .delay_timer,
+#add_new_team #settingcommon .team-input .fadein_speed,
+#add_new_team #settingcommon .team-input .typo_speed{margin-bottom:15px;padding:15px 30px 30px}
+#add_new_team #settingcommon .team-input .delay_timer{background:#fbe4e4;margin-bottom:20px;padding:15px 30px 40px}
+#add_new_team #settingcommon .team-input .fadein_speed,
+#add_new_team #settingcommon .team-input .typo_speed{margin-top:-30px}
+#add_new_team #settingcommon .team-input label{display:inline}
+#add_new_team #settingcommon .team-input label.label-title,
+#add_new_team #settingcommon .team-input label.label-check{color:#555555;margin:0;padding:10px 0;display:inline-block;font-size:14px;width:230px}
+#add_new_team #settingcommon .team-input input.medium,
+#add_new_team #settingcommon .team-input input.tickbox{padding:2px 4px;border-radius:5px;border:1px solid #ccc}
+#add_new_team #settingcommon .team-input input.medium{width:25%;margin:5px 3px 0;padding-left:10px}
+#add_new_team #settingcommon .team-input input[type=number]{width:100px}
+#add_new_team #settingcommon .team-input input.tickbox{margin:7px 2px 10px;border:1px solid #aaa}
+#add_new_team #settingcommon .team-input input.radiobox{margin:-4px 5px 0 10px}
+#add_new_team #settingcommon .team-input input#marked_layout_lout1,#add_new_team #settingcommon .team-input input#marked_ribbon_rb-1{margin-left:4px}
+#add_new_team #settingcommon .team-input input#ticker_type_category{margin-left:0}
+#add_new_team #settingcommon .team-input input[type=text]{width:30%}
+#add_new_team #settingcommon .team-input input#icon_prev,
+#add_new_team #settingcommon .team-input input#icon_next,
+#add_new_team #settingcommon .team-input input#icon_pause,
+#add_new_team #settingcommon .team-input input#icon_play,
+#add_new_team #settingcommon .team-input input#icon_bullet,
+#add_new_team #settingcommon .team-input .image_margin input[type=number]{width:7%}
+#add_new_team #settingcommon .team-input input#ticker_title,
+#add_new_team #settingcommon .team-input input#region_title{width:25%}
+#add_new_team #settingcommon .team-input textarea{display:inline-block;margin:10px 0;vertical-align:middle}
+#add_new_team #settingcommon .team-input textarea.medium{resize:none;border-radius:5px;border:1px solid #ccc;width:50%}
+#add_new_team #settingcommon .team-input textarea#shortcode_page_url{resize:vertical}
+#add_new_team #settingcommon .team-input .wp-editor-wrap{display:block}
+#add_new_team #settingcommon .team-input .rwctm-editor-bottom{background:#ffffff;width:140px;height:30px;position:absolute;bottom:-8px}
+#add_new_team #settingcommon .team-input #ticker_tag_add{position:relative;bottom:-47px;margin:0 5px;width:16px;height:16px;overflow:hidden;display:inline-block}
+#add_new_team #settingcommon .team-input #ticker_tag_add img{position:absolute;background-position:32px 44px;top:-9px;left:-8px}
+#add_new_team #settingcommon .team-input .tags-list{display:none;margin:0 0 10px}
+#add_new_team #settingcommon .team-input .tags-list a{background:#23282d;color:#fff;margin:0 3px 3px 0;padding:3px 5px;font-size:12px;display:inline-block}
+#add_new_team #settingcommon .team-input .wp-color-picker-field{display:inline-block}
+#add_new_team #settingcommon .team-input input.rwctm-color-picker{width:100%;margin:0 -2px;padding:0 10px;height:33px;line-height:34px}
+#add_new_team #settingcommon .team-input span.input_note,
+#add_new_team #settingcommon .team-input span.check_note{position:absolute;top:100%;bottom:0;left:236px;font-style:italic;color:#999;font-size:12px;line-height:16px;transform:translateY(-50%)}
+#add_new_team #settingcommon .team-input .team_options.ticker_custom span.input_note{left:0;padding-top:10px}
+#add_new_team #settingcommon .team-input span.check_note,
+#add_new_team #settingcommon .team-input .image_size span.input_note{top:50%;bottom:5px;left:300px;transform:translateY(-50%)}
+#add_new_team #settingcommon .team-input .image_size span.input_note{left:430px}
+#add_new_team #settingcommon .team-input span.check_note.multi{top:90%;left:235px}
+#add_new_team #settingcommon .team-input span.check_note b,
+#add_new_team #settingcommon .team-input span.input_note b{color:#8c8f94}
+#add_new_team #settingcommon .team-input .ticker_icons span.input_note,
+#add_new_team #settingcommon .team-input .scroll_speed span.input_note,
+#add_new_team #settingcommon .team-input .scroll_start span.input_note,
+#add_new_team #settingcommon .team-input .delay_timer span.input_note,
+#add_new_team #settingcommon .team-input .fadein_speed span.input_note,
+#add_new_team #settingcommon .team-input .typo_speed span.input_note,
+#add_new_team #settingcommon .team-input .imgmax_width .input_note,
+#add_new_team #settingcommon .team-input .imgmin_width .input_note{bottom:-50px;left:267px}
+#add_new_team #settingcommon .team-input .start_right span.check_note{top:64%;left:290px}
+#add_new_team #settingcommon .team-input .scroll_speed span.input_note,
+#add_new_team #settingcommon .team-input .imgmax_width .input_note{bottom:-25px}
+#add_new_team #settingcommon .team-input .delay_timer span.input_note{bottom:-70px}
+#add_new_team #settingcommon .team-input .image_margin .input_note{bottom:-40px;left:256px}
+#add_new_team #settingcommon .team-input input.tickbox{margin:0 19px;border:1px solid #aaa;position:relative;left:3px}
+#add_new_team #settingcommon .team-input input.tickbox.mcheck{position:relative;top:-1px;margin:2px 5px 2px 20px}
+#add_new_team #settingcommon .team-input label.label-title-check{float:left}
+#add_new_team #settingcommon .team-input img.preview_image{background:#F1F1F1;margin:0 7px;padding:5px;border:1px solid #CCC;position:relative;top:9px}
+#add_new_team #settingcommon .team-input span#remove_image{background:url(../images/rwctm-buttons.png) no-repeat -1px -57px;position:absolute;bottom:4px;width:26px;height:26px;margin:0 -8px;cursor:pointer}
+#add_new_team #settingcommon .ui-widget.ui-widget-content{border:none}
+#add_new_team #settingcommon .team-input #img-features,
+#add_new_team #settingcommon .team-input #filter-nav,
+#add_new_team #settingcommon .team-input #img-custom,
+#add_new_team #settingcommon .team-input .image_margin,
+#add_new_team #settingcommon .team-input #slider-apspeed,
+#add_new_team #settingcommon .team-input #slider-option{position:relative;background:#fff;border:1px solid #d2d2d2;margin:-20px 0 20px;padding:20px;width:auto;box-shadow:0 0 3px 1px rgb(177 177 177 / 50%);}
+#add_new_team #settingcommon .team-input #slider-option{margin-top:-54px}
+#add_new_team #settingcommon .team-input #img-features::before,
+#add_new_team #settingcommon .team-input #filter-nav::before,
+#add_new_team #settingcommon .team-input #img-custom::before,
+#add_new_team #settingcommon .team-input #slider-apspeed::before,
+#add_new_team #settingcommon .team-input .image_margin::before{content:"\f142";font-family:dashicons;position:absolute;left:222px;top:-20px;color:#b1b1b1;font-size:50px}
+#add_new_team #settingcommon .team-input .labelexpanded.slide::before{content:"\f142";font-family:dashicons;position:absolute;left:20px;bottom:-6px;color:#b1b1b1;font-size:50px;opacity:0;transition:opacity 1s ease}
+#add_new_team #settingcommon .team-input .labelexpanded.slider-before::before{opacity:1}
+#add_new_team #settingcommon .team-input .image_margin,
+#add_new_team #settingcommon .team-input #img-custom,
+#add_new_team #settingcommon .team-input #slider-apspeed{background:#f3f7fa;border-color:#d2e0eb;padding:30px 20px 20px;width:auto;box-shadow:none}
+#add_new_team #settingcommon .team-input .image_margin::before,
+#add_new_team #settingcommon .team-input #img-custom::before,
+#add_new_team #settingcommon .team-input #slider-apspeed::before{color:#d2e0eb}
+#add_new_team #settingcommon .team-input .team_options.video_screen,
+#add_new_team #settingcommon .team-input .team_options.modest_brand{margin-bottom:0;top:-10px}
+#add_new_team #settingcommon .team-input #max-column{display:inline-block;width:100%;margin:10px 0 0;padding:15px 0 0;border-top:1px solid #ccc;border-bottom:1px solid #ccc}
+#add_new_team #settingcommon .team-input #max-column h4{float:left;border:none}
+#add_new_team #settingcommon .team-input #max-column .team_options{float:left;margin-left:21px}
+#add_new_team #settingcommon .team-input #max-column .team_options .label-check{width:100%;margin-bottom:5px;padding:0}
+#add_new_team #settingcommon .team-input .team_options .label-check.numgroup{position:absolute;top:-2px;margin-left:6px;width:auto}
+#add_new_team #settingcommon .team-input .team_options.tm_name_font,
+#add_new_team #settingcommon .team-input .team_options.nav_font_size,
+#add_new_team #settingcommon .team-input .team_options.mn_thumb_font,
+#add_new_team #settingcommon .team-input .team_options.dp_thumb_font,
+#add_new_team #settingcommon .team-input .team_options.dg_thumb_font,
+#add_new_team #settingcommon .team-input .team_options.bio_thumb_fnt,
+#add_new_team #settingcommon .team-input .team_options.sm_thumb_font,
+#add_new_team #settingcommon .team-input .team_options.tmname_margin{padding:30px 0 0}
+#add_new_team #settingcommon .team-input #max-column .team_options .select{margin-left:0;margin-bottom:0}
+#add_new_team #settingcommon .team-input input[type=checkbox]:after{content:"Off";position:absolute;z-index:1;margin:-14px 0 0;top:50%;left:4px;display:inline-block;background:#CCCCCC;padding:14px 5px;width:4.2em;border-radius:30px;box-shadow:inset 1px 1px 1px rgba(0,0,0,0.3);color:#EEEEEE;text-transform:uppercase;font-size:11px;text-align:right}
+#add_new_team #settingcommon .team-input input[type=checkbox]:before{content:"";position:absolute;z-index:2;width:1.6em;height:1.6em;top:50%;margin-top:-.8em;left:7px;font-size:14px;background:#eee;border-radius:1em;box-shadow:0 1px 1px #999,inset 0 3px 4px #fff;transition:left .05s linear}
+#add_new_team #settingcommon .team-input input[type=checkbox]:checked:after{content:"On";text-align:left;padding-left:5px;background:#9ad179;color:#669933}
+#add_new_team #settingcommon .team-input input[type=checkbox]:after{left:-20px}
+#add_new_team #settingcommon .team-input input[type=checkbox]:before{left:-17px}
+#add_new_team #settingcommon .team-input input[type=checkbox]:checked:before{left:15px}
+#add_new_team #settingcommon .team-input hr{margin:40px 0 20px;border-style:dashed;border-top-color:#c1c1c1;border-bottom-color:#f1f1f1}
+#add_new_team #settingcommon .team-input .marked_layout .label-check,
+#add_new_team #settingcommon .team-input .layout_style .label-check{position:relative;top:-50px}
+#add_new_team #settingcommon .team-input .marked_layout .input_note,
+#add_new_team #settingcommon .team-input .layout_style .input_note{bottom:-36px}
+#add_new_team #settingcommon .team-input .team_options .layout-style{position:relative;width:50%;display:inline-table;margin:20px 0 5px}
+#add_new_team #settingcommon .team-input .marked_ribbon .layout-style,
+#add_new_team #settingcommon .team-input .team_options .layout-style.style-group{width:70%}
+#add_new_team #settingcommon .team-input label.labelexpanded{position:relative;width:25%;display:inline-block;margin:0 0 20px}
+#add_new_team #settingcommon .team-input .style-group .labelexpanded{margin-bottom:3px}
+#add_new_team #settingcommon .team-input .marked_ribbon .layout-style .labelexpanded{width:100px;height:52px;margin-right:18px}
+#add_new_team #settingcommon .team-input .labelexpanded > input[type=radio]{position:absolute;opacity:0;width:0;height:0}
+#add_new_team #settingcommon .team-input .radio-btns{position:relative;padding:0;border:1px solid #eaeaea;display:inline-block;margin:0 15px 25px 0;transition:120ms transform ease-in-out}
+#add_new_team #settingcommon .team-input .marked_ribbon .radio-btns{width:89px;height:52px}
+#add_new_team #settingcommon .team-input .radio-btns.btn-group{width:140px}
+#add_new_team #settingcommon .team-input .radio-btns .rb-1{position:absolute;top:-1px;left:-7px;background:url(../images/ribbons.png) 15px 0 no-repeat;width:105px;height:45px}
+#add_new_team #settingcommon .team-input .radio-btns .rb-2{position:absolute;top:-1px;left:-7px;background:url(../images/ribbons.png) -100px -10px no-repeat;width:60px;height:45px}
+#add_new_team #settingcommon .team-input .radio-btns .rb-3{position:absolute;top:-8px;left:-7px;background:url(../images/ribbons.png) -160px -7px no-repeat;width:60px;height:52px}
+#add_new_team #settingcommon .team-input .radio-btns .rb-4{position:absolute;top:-1px;left:15px;background:url(../images/ribbons.png) -224px -2px no-repeat;width:85px;height:45px}
+#add_new_team #settingcommon .team-input .radio-btns .rb-5{position:absolute;top:-1px;left:5px;background:url(../images/ribbons.png) -310px -10px no-repeat;width:90px;height:45px}
+#add_new_team #settingcommon .team-input .radio-btns.grids{background:url(../images/layout-type.png) -15px -14px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.slide{background:url(../images/layout-type.png) -125px -14px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.popup{background:url(../images/layout-type.png) -235px -14px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout1{background:url(../images/layout-style.png) -15px -14px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout2{background:url(../images/layout-style.png) -125px -14px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout3{background:url(../images/layout-style.png) -235px -14px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout4{background:url(../images/layout-style.png) -345px -14px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout5{background:url(../images/layout-style.png) -15px -84px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout6{background:url(../images/layout-style.png) -125px -84px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout7{background:url(../images/layout-style.png) -235px -84px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout8{background:url(../images/layout-style.png) -345px -84px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout9{background:url(../images/layout-style.png) -15px -154px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout10{background:url(../images/layout-style.png) -125px -154px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout11{background:url(../images/layout-style.png) -235px -154px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout12{background:url(../images/layout-style.png) -345px -154px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout13{background:url(../images/layout-style.png) -15px -224px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout14{background:url(../images/layout-style.png) -125px -224px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout15{background:url(../images/layout-style.png) -235px -224px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout16{background:url(../images/layout-style.png) -345px -224px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout17{background:url(../images/layout-style.png) -15px -294px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout18{background:url(../images/layout-style.png) -125px -294px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout19{background:url(../images/layout-style.png) -235px -294px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout20{background:url(../images/layout-style.png) -345px -294px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout21{background:url(../images/layout-style.png) -15px -364px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout22{background:url(../images/layout-style.png) -125px -364px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout23{background:url(../images/layout-style.png) -235px -364px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout24{background:url(../images/layout-style.png) -345px -364px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout25{background:url(../images/layout-style.png) -15px -434px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout26{background:url(../images/layout-style.png) -125px -434px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout27{background:url(../images/layout-style.png) -235px -434px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.lout28{background:url(../images/layout-style.png) -345px -434px no-repeat;width:90px;height:58px}
+#add_new_team #settingcommon .team-input .radio-btns.effect0{background:url(../images/box-shadows.png) -10px -13px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .radio-btns.effect1{background:url(../images/box-shadows.png) -120px -14px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .radio-btns.effect2{background:url(../images/box-shadows.png) -230px -15px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .radio-btns.effect3{background:url(../images/box-shadows.png) -10px -84px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .radio-btns.effect4{background:url(../images/box-shadows.png) -120px -83px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .radio-btns.effect5{background:url(../images/box-shadows.png) -230px -83px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .radio-btns.effect6{background:url(../images/box-shadows.png) -10px -154px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .radio-btns.effect7{background:url(../images/box-shadows.png) -120px -153px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .radio-btns.effect8{background:url(../images/box-shadows.png) -230px -153px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .radio-btns.effect9{background:url(../images/box-shadows.png) -10px -223px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .radio-btns.effect10{background:url(../images/box-shadows.png) -120px -222px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .radio-btns.effect11{background:url(../images/box-shadows.png) -230px -224px no-repeat;width:100px;height:60px}
+#add_new_team #settingcommon .team-input .labelexpanded input:checked + .radio-btns{border-color:#253c6a}
+#add_new_team #settingcommon .team-input .radio-btns.btn-group .dashicons-yes-alt{width:16px;height:16px;font-size:24px}
+#add_new_team #settingcommon .team-input .labelexpanded input:checked + .radio-btns.btn-group .dashicons-yes-alt{background:#605105;color:#f3bc59;left:50%;top:-2px;transform:translateX(-50%)}
+#add_new_team #settingcommon .team-input .radio-btns .dashicons-yes-alt{font-size:36px;position:absolute;top:-10px;right:-10px;width:28px;height:28px;border-radius:50px;opacity:0;z-index:1}
+#add_new_team #settingcommon .team-input .labelexpanded input:checked + .radio-btns .dashicons-yes-alt{opacity:1;background:#ffffff;color:#135e96}
+#add_new_team #settingcommon .team-input .radio-btns .dashicons-yes-alt:before{position:absolute;top:-4px;left:-4px}
+#add_new_team #settingcommon .team-input .radio-btns span{position:absolute;bottom:-18px;left:-1px;width:100%;padding:0 1px;text-align:center;background-color:#eaeaea;border-bottom-left-radius:15px;border-bottom-right-radius:15px}
+#add_new_team #settingcommon .team-input .marked_ribbon .radio-btns span{top:45px;left:-1px;bottom:unset;width:89px}
+#add_new_team #settingcommon .team-input .labelexpanded input:checked + .radio-btns span{background-color:#253c6a;color:#ffffff}
+#add_new_team #settingcommon .team-input .radio-btns.btn-group span{border-radius:0}
+#add_new_team #settingcommon .team-input .labelexpanded input:checked + .radio-btns.btn-group span{background-color:#262626}
+#add_new_team #rwctm_list #rwctm_save.button-primary{float:left;margin:15px 27px 25px}
+/* //RWC Team Members Settings */
+
+/* Team Tooltip */
+#add_new_team a.rwctm_tooltip,
+#rwctm_global_settings a.rwctm_tooltip{font-size:18px;margin:0 0 0 5px;position:relative;display:inline-block;color:#364D55}
+#add_new_team .smheader a.rwctm_tooltip:hover:after,
+#add_new_team #teamcolumndiv a.rwctm_tooltip:hover:after,
+#add_new_team #settingcommon a.rwctm_tooltip:hover:after,
+#rwctm_global_settings a.rwctm_tooltip:hover:after,
+#add_new_team .team_list table tbody td #copy_team.duplicate_team:hover:after{background:#e5f9e0;border:1px solid #80c780;color:#378037;-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;-khtml-border-radius:5px;border-radius:5px;top:30px;left:-90px;content:attr(rel);padding:20px;position:absolute;z-index:98;width:320px;font-size:14px;text-align:left;line-height:24px}
+#add_new_team .smheader a.rwctm_tooltip.rwctm_left:hover:after{right:-90px;left:unset}
+#add_new_team .smheader a.rwctm_tooltip:hover .rwctm_ttarrow::before,
+#add_new_team #teamcolumndiv a.rwctm_tooltip:hover .rwctm_ttarrow::before,
+#add_new_team #settingcommon a.rwctm_tooltip:hover .rwctm_ttarrow::before,
+#rwctm_global_settings a.rwctm_tooltip:hover .rwctm_ttarrow::before,
+#rwctm_global_settings a.rwctm_tooltip.rwctm_note:hover::before,
+#add_new_team .team_list table tbody td #copy_team.duplicate_team:hover:before{content:"";border:solid;border-color:transparent transparent #80c780;border-width:10px;top:10px;left:-1px;position:absolute;z-index:99}
+#add_new_team #teamcolumndiv a.rwctm_tooltip::before{position:relative;top:1px}
+#add_new_team #settingcommon a.rwctm_tooltip::before{position:relative;top:4px}
+#add_new_team #teamcolumndiv a.rwctm_tooltip:hover:after,
+#add_new_team #settingcommon a.rwctm_tooltip:hover:after,
+#add_new_team .team_list table tbody td #copy_team.duplicate_team:hover:after{background:#3c434a;color:#fff;border:1px solid #1d2327;top:-20px;left:35px;right:unset;padding:10px 20px;padding:15px 30px;font-size:14px;line-height:20px}
+#add_new_team #teamcolumndiv a.rwctm_tooltip:hover:after,
+#add_new_team #settingcommon a.rwctm_tooltip:hover:after{width:300px}
+#add_new_team #teamcolumndiv a.rwctm_tooltip:hover .rwctm_ttarrow::before,
+#add_new_team #settingcommon a.rwctm_tooltip:hover .rwctm_ttarrow::before,
+#add_new_team .team_list table tbody td #copy_team.duplicate_team:hover:before{border-color:transparent #3c434a transparent transparent;top:unset;bottom:-3px;left:16px}
+#add_new_team #teamcolumndiv a.rwctm_tooltip:hover .rwctm_ttarrow::before{bottom:0}
+#add_new_team .team_list table tbody td #copy_team.duplicate_team:hover:before{bottom:1px}
+#add_new_team .team_list table tbody td #copy_team.duplicate_team:hover:after{top:-4px;padding:5px 10px;width:98px;font-size:14px}
+/* //Team Tooltip */
+
+/* RWC Team Members Templates */
+#add_team_template .template-container{clear:both;margin-top:20px;padding:0 0 100px}
+#add_team_template .template-container .template-items{cursor:pointer;float:left;margin:0 1% 1% 0;position:relative;width:24.2%;border:1px solid #dedede;-webkit-box-shadow:0 1px 1px -1px rgba(0,0,0,.1);box-shadow:0 1px 1px -1px rgba(0,0,0,.1);-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#add_team_template .template-container .template-items:focus,
+#add_team_template .template-container .template-items:hover{cursor:pointer}
+#add_team_template .template-container .template-items:nth-child(4n){margin-right:0}
+#add_team_template .template-container .template-items .template-img{background:#fff;display:block;overflow:hidden;position:relative;text-align:center;-webkit-transition:opacity .2s ease-in-out;transition:opacity .2s ease-in-out}
+#add_team_template .template-container .template-items .template-img .demo_link{opacity:0;position:absolute;top:50%;left:50%;font-size:14px;font-weight:600;background:#07156b;width:36%;height:36px;line-height:36px;color:#fff;padding-left:3px;text-decoration:none;text-align:center;border-radius:4px;transform:translate(-50%,-50%)}
+#add_team_template .template-container .template-items .template-img .demo_link span{position:relative;top:10px;left:-2px;font-size:16px}
+#add_team_template .template-container .template-items .template-img .demo_link:hover{background:#333333}
+#add_team_template .template-container .template-items .template-img:after{content:"";padding:0}
+#add_team_template .template-container .template-items:focus .template-img,
+#add_team_template .template-container .template-items:hover .template-img{background:#fff}
+#add_team_template .template-container .template-items .template-img img{position:relative;width:100%;-webkit-transition:opacity .2s ease-in-out;transition:opacity .2s ease-in-out}
+#add_team_template .template-container .template-items:focus .template-img img,
+#add_team_template .template-container .template-items:hover .template-img img{opacity:.4}
+#add_team_template .template-container .template-items .template-name{font-size:15px;font-weight:600;height:18px;margin:0;padding:15px;-webkit-box-shadow:inset 0px 0px 2px 4px #ffffff;box-shadow:inset 0px 0px 2px 4px #ffffff;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background:#fff}
+#add_team_template .template-container .template-items.focus .template-actions,
+#add_team_template .template-container .template-items:focus .template-actions,
+#add_team_template .template-container .template-items:hover .template-actions,
+#add_team_template .template-container .template-items:hover .template-img .demo_link{-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter:opacity(1);opacity:1}
+#add_team_template .template-container .template-items .template-actions{-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:opacity(0);opacity:0;-webkit-transition:opacity .1s ease-in-out;transition:opacity .1s ease-in-out;position:absolute;bottom:0;right:0;height:38px;padding:9px 10px 0;background:rgba(244,244,244,.7);border-left:1px solid rgba(0,0,0,.05)}
+#add_team_template .template-container .template-items .template-actions .button-secondary{float:none;margin-left:3px}
+#add_team_template .template-container .template-items .template-actions .button-primary{margin-right:3px}
+/* //RWC Team Members Templates */
+
+/* Modal styles */
+#rwctm-modal-container{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.7);display:flex;align-items:center;justify-content:center;z-index:9999}
+/* Styles for the modal content */
+#rwctm-modal-container #rwctm-modal-content{background-color:#fff;max-width:90%;max-height:90%;overflow:auto;padding:20px;box-shadow:0px 0px 10px rgba(0, 0, 0, 0.3)}
+#rwctm-modal-container #rwctm-modal-content img{width:100%}
+/* // Modal */
+
+/* Global Settings */
+#rwctm_global_settings h2{margin:1em 0 .56em;font-size:24px;font-weight:600}
+#rwctm_global_settings .rwctm_global.ui-widget.ui-widget-content{margin:0 0 20px;width:64%;float:left;background:#fff}
+.rwctm_global .rwctm_options{float:left;width:100%;margin:5px 2px 15px}
+.rwctm_global #user_choice_font{display:inline-block;background:#F8F8FF;border:1px solid #aaa;-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;-khtml-border-radius:5px;border-radius:5px;color:#6E6E6E;margin:10px auto 20px;padding:10px 20px 20px;font-style:italic}
+.rwctm_global label.rwctm_global_check{float:left;border-radius:10px;padding:6px;margin:0 7px 10px 0;position:relative;font-size:13px;cursor:pointer;line-height:24px;background-color:#f5f5f5;background-image:-moz-linear-gradient(top,#ffffff,#e6e6e6);background-image:-webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#e6e6e6));background-image:-webkit-linear-gradient(top,#ffffff,#e6e6e6);background-image:-o-linear-gradient(top,#ffffff,#e6e6e6);background-image:linear-gradient(to bottom,#ffffff,#e6e6e6);background-repeat:repeat-x;border:1px solid #cccccc;border-color:#e6e6e6 #e6e6e6 #bfbfbf;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);border-bottom-color:#b3b3b3;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05)}
+.rwctm_global label.rwctm_global_check input[type=checkbox]:after{content:"On";position:absolute;z-index:1;margin:-14px 0 0;top:50%;right:4px;display:inline-block;background:#9ad179;padding:14px 5px;width:4em;border-radius:30px;box-shadow:inset 1px 1px 1px rgba(0,0,0,0.3);color:#669933;text-transform:uppercase;font-size:11px;text-align:left}
+.rwctm_global label.rwctm_global_check input[type=checkbox]:before{content:"";position:absolute;z-index:2;width:1.6em;height:1.6em;top:50%;margin-top:-.8em;right:7px;font-size:14px;background:#eeeeee;border-radius:1em;box-shadow:0 1px 1px #999999,inset 0 3px 4px #ffffff;transition:right .05s linear}
+.rwctm_global #user_choice_font .rwctm_options{margin-bottom:0}
+.rwctm_global label.input-check,
+.rwctm_global label.input-title{padding:9px 0;float:left;font-size:14px;width:65%;cursor:auto}
+.rwctm_global label.rwctm_global_check{width:62px;height:34px;margin:0;padding:0}
+.rwctm_global input.medium{padding:9px 5px;border-radius:5px;border:1px solid #cccccc;width:49%;margin:2px 0 0}
+.rwctm_global #user_choice_font label.input-title a.global-link{color:#2271b1;text-decoration:none}
+.rwctm_global #user_choice_font label.input-title a.global-link:hover{text-decoration:underline}
+.rwctm_global #user_choice_font label.input-title a.global-link::after{content:'\f504';font-family:dashicons;font-size:16px;position:relative;top:2px}
+.rwctm_global #user_choice_font input.medium{width:100%}
+.rwctm_global label.rwctm_global_check input[type=checkbox]{margin:10px 24px}
+.rwctm_global label.rwctm_global_check input[type=checkbox]:after{content:"Off";text-align:right;padding-right:6px;background:#CCCCCC;color:#EEEEEE}
+.rwctm_global label.rwctm_global_check input[type=checkbox]:checked:after{content:"On";position:absolute;z-index:1;margin:-14px 0 0;top:50%;right:4px;display:inline-block;background:#9ad179;padding:14px 5px;width:4em;border-radius:30px;box-shadow:inset 1px 1px 1px rgba(0,0,0,0.3);color:#669933;text-transform:uppercase;font-size:11px;text-align:left}
+.rwctm_global label.rwctm_global_check input[type=checkbox]:before{right:34px}
+.rwctm_global label.rwctm_global_check input[type=checkbox]:checked:before{content:"";position:absolute;z-index:2;width:1.6em;height:1.6em;top:50%;margin-top:-.8em;right:7px;font-size:14px;background:#eee;border-radius:1em;box-shadow:0 1px 1px #999,inset 0 3px 4px #fff;transition:right .05s linear}
+#rwctm_global_settings a.rwctm_tooltip.dashicons,
+#rwctm_global_settings a.rwctm_tooltip.rwctm_note{width:18px;height:18px}
+#rwctm_global_settings a.rwctm_tooltip.rwctm_note{height:14px}
+#rwctm_global_settings a.rwctm_tooltip:hover:after{top:-25px;left:30px;right:unset;width:360px;font-style:normal;line-height:20px}
+#rwctm_global_settings a.rwctm_tooltip.rwctm_note:hover:after{top:-36px}
+#rwctm_global_settings a.rwctm_tooltip:hover .rwctm_ttarrow::before,
+#rwctm_global_settings a.rwctm_tooltip.rwctm_note:hover::before{top:-2px;left:10px;border-color:transparent #80c780 transparent transparent}
+#rwctm_global_settings a.rwctm_tooltip.rwctm_note:hover::before{top:0}
+#rwctm_global_settings .dashicons{margin-left:5px;margin-top:-1px}
+#rwctm_global_settings #user_choice_font .dashicons{margin-top:2px}
+#rwctm_global_settings a.rwctm_tooltip.rwctm_note{background:none;left:-20px;top:-3px}
+#rwctm_global_settings a.rwctm_tooltip.rwctm_note:hover:after{min-width:300px;max-width:524px;width:500px;font-size:14px;line-height:24px;padding:45px 30px 20px;color:#323232}
+#rwctm_global_settings a.rwctm_tooltip.rwctm_note:hover i.attention::after{content:attr(title);position:absolute;top:-18px;left:61px;font-size:16px;line-height:24px;color:#323232;font-style:normal;min-width:300px;z-index:99}
+#rwctm_global_settings a.rwctm_tooltip.rwctm_note::before{top:-4px}
+/*CodeMirror */
+.simple-css .CodeMirror{height:80vh}
+#rwctm_global_settings .rwctm_global .rwctm_custom_css .CodeMirror{border:1px solid #ddd}
+#rwctm_global_settings .rwctm_global .rwctm_custom_css .CodeMirror-scroll{margin-right:0}
+#rwctm_global_settings .rwctm_global .rwctm_custom_css .CodeMirror-sizer{border:0;margin-left:46px!important}
+#rwctm_global_settings .rwctm_global .rwctm_custom_css .CodeMirror-gutters{left:0!important}
+#rwctm_global_settings .rwctm_global .rwctm_custom_css .CodeMirror-lint-markers{width:auto}
+#rwctm_global_settings .rwctm_global .rwctm_custom_css .CodeMirror-gutter.CodeMirror-linenumbers{width:45px!important}
+/* //Global Settings */
+
+/* Help */
+.rwctmusage-maincontent{padding:0 20px 0 0}
+.rwctmusage-maincontent .rwctm{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;margin:0 auto 20px;background:#f9fcff;box-shadow:0px 0px 4px 2px rgb(34 35 58 / 20%);padding:25px;border-radius:25px;transition:all .3s}
+.rwctmusage-maincontent .rwctm h3{font-size:18px;font-weight:700;color:#0d0925;margin-bottom:20px;border-bottom:1px solid #72777c;padding-bottom:7px;text-transform:uppercase;line-height:30px}
+.rwctmusage-maincontent .rwctm p{font-size:16px;padding:0 10px;}
+.rwctmusage-maincontent .prepend-top{margin-top:10px;margin-bottom:10px}
+.rwctmusage-maincontent .append-1{padding:0 10px}
+.rwctm_guide.postbox-container .rwctmusage-maincontent .getting-started_video{display:flex}
+.rwctm_guide.postbox-container .rwctmusage-maincontent .getting-started_video img{max-width:100%}
+.rwctm_guide.postbox-container h2{font-size:24px;margin-top:0}
+/* //Help */
+
+/* Narration */
+#rwctm-narration{position:relative;top:30px;margin:0 0 50px;width:64%;float:left}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent{padding-bottom:64px}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm .likeit{position:relative;margin:0 0 50px;font-size:14px;text-transform:uppercase;text-align:justify;color:#2271b1;font-weight:600;line-height:1.5}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm .likeit a{position:absolute;left:50%;top:calc(100% + 5px);font-size:16px;background-image:linear-gradient(147deg,#fe8a39 0%,#fd3838 74%);margin:10px 0 0;padding:6px 18px;border-radius:50px;color:#fff;text-decoration:none;text-align:center;letter-spacing:4px;transform:translateX(-50%)}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm .likeit a:hover{text-decoration:none;color:#ffe000;background-image:linear-gradient(335deg,#fe8a39 0%,#fd3838 74%)}
+/* //Narration */
+
+/* blockquote */
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote{position:relative;margin:40px 0;padding:2.6em 2.6em 10px;background:hsl(0 0% 97%) no-repeat left / 140px;border-radius:7px;border:2px solid white;box-shadow:2px 2px 4px hsl(0 0% 0% / 20%);text-indent:1.6em}
+@media (min-width: 768px) {
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote{margin:40px 5px}
+}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote::before{content:"";pointer-events:none;position:absolute;z-index:1;left:0;top:0;right:0;bottom:0;border-radius:7px;box-shadow:inset -2px -2px 1px hsl(0 0% 100%),inset 2px 2px 4px hsl(0 0% 0% / 20%)}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote::after{content:"\f122";font-family:dashicons;position:absolute;z-index:1;left:50%;top:-2px;transform:translate(-50%,-50%);width:50px;height:50px;background:white;box-shadow:0 4px 5px -1px hsla(0 0% 0% / 20%);border-radius:999px;display:grid;place-content:center;padding:0;color:#3059fd;font-size:30px;font-style:normal;text-indent:0}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote p{font-size:.85rem;font-style:italic;font-weight:400;letter-spacing:normal;margin-left:49%}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote .blockquote-author-image{position:absolute;left:11px;top:11px;width:48%;height:94%;background:#f7f7f7 url(../images/general-settings-shortcode-page-url.png) no-repeat;background-position:-12px 0;background-size:contain;border-top-left-radius:7px;border-bottom-left-radius:7px}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote cite{display:block;margin-top:-20px;text-indent:0;text-align:right;text-transform:uppercase;color:hsl(0 0% 20%)}
+@media (min-width: 768px) {
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote cite{margin-left:calc(5rem - 140px)}
+}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote .cite-last-name{background:#3059fd;color:hsl(0 0% 97%)}
+/* //blockquote */
+
+/* Sidebar */
+#rwctm-sidebar.code{position:relative;width:34%;float:left;top:60px;margin-left:15px;margin-bottom:50px}
+#rwctm-sidebar.code.rwctm-tools{width:30%;top:0;left:20px;margin-left:0}
+#rwctm-sidebar.code.rwctm-tools #rwctmusage-info{display:none}
+#rwctm-sidebar .rwctmusage-sidebar h3{border-bottom:1px solid #72777c;padding-bottom:7px;text-transform:uppercase}
+#rwctm-sidebar.code .rwctmusage-sidebar h3{font-size:24px;font-weight:700;color:#0d0925;margin-bottom:10px;line-height:30px}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar,
+#rwctm-sidebar #rwctmusage-info.rwctmusage-sidebar{background-color:#ffffff;border:1px solid #ddd;color:#000;position:relative;max-width:422px;padding:15px;margin-bottom:20px!important;box-shadow:0 14px 80px rgb(34 35 58 / 20%);padding:25px;border-radius:25px;transition:all .3s}
+#rwctm-sidebar.code #rwctmusage-note.rwctmusage-sidebar,
+#rwctm-sidebar.code #rwctmusage-info.rwctmusage-sidebar{height:auto;padding-top:0;padding-bottom:40px}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm,
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;margin:0 0 10px;line-height:30px}
+#rwctm-sidebar.code #rwctmusage-note.rwctmusage-sidebar .rwctm .rwctm-first::first-letter{font-size:2em;line-height:1;letter-spacing:-4px;font-weight:700;color:#e9950c}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm pre{overflow:auto;margin:0;scrollbar-width:thin;scrollbar-color:#d4aa70 #0e8cf1;scrollbar-gutter:stable}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm pre::-webkit-scrollbar{height:8px}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm pre::-webkit-scrollbar-track{background-color:#343541}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm pre::-webkit-scrollbar-thumb{background-color:#0e8cf1;border-radius:100px;background-clip:content-box}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm code{color:#ffd100;display:block;height:36px;line-height:36px;margin:0;padding:0 4px;font-size:13px;font-weight:600;border-left:10px solid #343541;background:#000000;min-width:410px;width:490px}
+#rwctm-sidebar.code #rwctmusage-note.rwctmusage-sidebar .rwctm ol li code{width:auto;min-width:298px}
+#rwctm-sidebar.code #rwctmusage-note.rwctmusage-sidebar .rwctm p{font-size:0.94rem;line-height:1.35;margin-bottom:10px}
+#rwctm-sidebar.code #rwctmusage-note.rwctmusage-sidebar .rwctm p:last-child{margin:10px 0 -25px}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm ol,
+#rwctm-sidebar.code #rwctmusage-note.rwctmusage-sidebar .rwctm ol{margin:15px 10px 15px 24px;padding:0}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm ol li,
+#rwctm-sidebar.code #rwctmusage-note.rwctmusage-sidebar .rwctm ol li{font-family:none;margin:0 0 5px;padding:0;font-size:13px;font-weight:400;line-height:1.4;color:#445460}
+#rwctm-sidebar.code #rwctmusage-note.rwctmusage-sidebar .rwctm ol li pre{margin:10px -21px;width:calc(100% + 24px)}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm pre code,
+#rwctm-sidebar.code #rwctmusage-note.rwctmusage-sidebar .rwctm pre code{border-left-width:10px;border-left-color:#343541;background:#000;color:#fff;height:50px;line-height:50px}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm .rwctm-meta{color:hsla(0,0%,100%,.6)}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm .rwctm-keyword{color:#2e95d3}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm .rwctm-function{color:#f22c3d}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm .rwctm-string{color:#00a67d}
+#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm .rwctm-built_in{color:#e9950c}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm a,
+#rwctm-sidebar.code #rwctmusage-note.rwctmusage-sidebar .rwctm a{float:none;background:none;margin:0;padding:0;color:#2271b1;font-size:100%;border-radius:0;box-shadow:none;border:0;font-weight:600;text-decoration:none}
+#rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm a:hover,
+#rwctm-sidebar.code #rwctmusage-note.rwctmusage-sidebar .rwctm a:hover{color:#135e96;text-decoration:underline}
+#rwctm-sidebar #rwctmusage-info.rwctmusage-sidebar .rwctmusage-list{margin:10px 0 0}
+#rwctm-sidebar #rwctmusage-info.rwctmusage-sidebar .rwctmusage-list li{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;list-style:disc;margin:0 0 0 20px;font-size:16px;line-height:30px}
+#rwctm-sidebar #rwctmusage-info.rwctmusage-sidebar a{color:#0073aa;text-decoration:none;font-weight:600}
+#rwctm-sidebar #rwctmusage-info.rwctmusage-sidebar a:hover{text-decoration:underline}
+/* //Sidebar */
+
+/* Notice */
+#add_new_team .team_list p.get_started,
+#add_new_team .team_list p.activity_notice,
+#rwctm_global_settings .rwctm_global .rwctm_custom_css p.get_started{color:#464646;margin:0 auto 30px;padding:30px;font-size:18px;font-weight:400;font-style:italic;background:#fff;border-left:10px solid #7ad03a;-webkit-box-shadow:0 1px 1px 0 rgb(0 0 0 / 10%);box-shadow:0 0 3px 1px rgb(0 0 0 / 20%);max-width:95%;border-radius:30px}
+#add_new_team .team_list p.activity_notice{text-align:center;position:absolute;bottom:0;left:50%;padding:10px 15px;display:inline-block;transform:translateX(-50%);width:50%;border-radius:25px}
+#rwctm_global_settings .rwctm_global .rwctm_custom_css p.get_started{width:90%;font-size:16px;margin-top:50px;margin-bottom:10px}
+#add_new_team .table_list p.get_started,
+#add_new_team .table_list p.rwctm_notice,
+#rwctm_global_settings .rwctm_global .rwctm_custom_css p.get_started{border-radius:25px;transition:all .3s}
+/* // Notice */
+
+/* STYLE TO FIT MORE THEN 8 COLOR PALETTES*/
+#add_new_team .wp-picker-container.wp-picker-active{width:100%}
+#add_new_team .wp-picker-container.wp-picker-active .wp-picker-open + .wp-picker-input-wrap label{float:left;width:70px!important}
+#add_new_team .wp-picker-container.wp-picker-active .wp-picker-open + .wp-picker-input-wrap .wp-color-picker{width:70px;float:left}
+#add_new_team .wp-picker-container.wp-picker-active .wp-picker-holder{width:100%!important}
+#add_new_team .wp-picker-container.wp-picker-active .wp-picker-holder .iris-picker{max-width:240px!important}
+#add_new_team .wp-picker-container.wp-picker-active .iris-picker-inner .iris-square{margin-right:6px!important;max-height:147px!important}
+#add_new_team .wp-picker-container.wp-picker-active .iris-palette-container .iris-palette{width:17px!important;height:17px!important;margin-bottom:4px!important}
+#add_new_team .wp-picker-container.wp-picker-active .iris-palette-container .iris-palette:nth-child(9)+ a.iris-palette{float:left;clear:left;margin-left:0!important}
+#add_new_team .wp-picker-container .wp-color-result.button{font-size:12px}
+#add_new_team a.wp-color-result{margin:2px 2px 0 0}
+#add_new_team .wp-picker-container input[type=text].wp-color-picker,
+#add_new_team .button.button-small{margin:0 0 0 -2px;font-size:12px;height:32px;line-height:32px}
+#add_new_team .button.button-small{margin-left:2px}
+
+/* Review */
+#rwctm-review{padding:15px}
+#rwctm-review p{margin:0;font-size:14px}
+.rwctm-review-btn{margin-top:15px}
+.rwctm-review-btn a{display:inline-block;text-decoration:none;margin-right:5px!important;padding:6px 20px}
+/* //Review */
+
+/* Responsive */
+@media only screen and (min-width:1366px){
+    #teamcolumndiv .member_details{width:525px}
+}
+@media only screen and (max-width:1365px) and (min-width:1300px){
+    #teamcolumndiv .member_details{width:493px}
+    #teamcolumndiv .element-input{width:470px}
+    #teamcolumndiv .element-input hr{width:445px}
+    #teamcolumndiv .element-input label.input-title,
+    #add_new_team .element-input label.input-check,
+    #teamcolumndiv .element-input label.input-title-check{width:215px}
+    #teamcolumndiv .element-input label.input-image{width:100px}
+    #add_new_team .element-input table tr.team-header,
+    #add_new_team .element-input table tr.team-input{max-width:94%}
+    #add_new_team .wp-picker-container.wp-picker-active .wp-picker-holder{position:relative;left:-121px}
+    #teamcolumndiv .element-input .rwctm-uploader input.medium{width:198px}
+}
+@media only screen and (max-width:1299px) and (min-width:1200px){
+    #add_new_team #teamactivitydiv tr.activitybody td input[type="text"]{max-width:162px}
+    #teamcolumndiv .member_details{width:442px}
+    #teamcolumndiv .element-input{width:419px}
+    #teamcolumndiv .element-input hr{width:395px}
+    #teamcolumndiv .element-input label.input-title,
+    #add_new_team .element-input label.input-check,
+    #teamcolumndiv .element-input label.input-title-check{width:180px}
+    #teamcolumndiv .element-input input.medium{width:210px}
+    #teamcolumndiv .element-input label.input-title.mb-section,
+    #teamcolumndiv .element-input label.input-title.mb-status{width:115px}
+    #add_new_team .element-input .selectize-control.single,
+    #add_new_team .element-input .selectize-control.multi,
+    #add_new_team #settingcommon .team-input .selectize-control.single{width:275px}
+    #teamcolumndiv .element-input label.input-title.mb-section .rwctm_tooltip,
+    #teamcolumndiv .element-input label.input-title.mb-status .rwctm_tooltip{margin-top:9px}
+    #teamcolumndiv .element-input input.in_small{width:122px}
+    #teamcolumndiv .element-input label.input-image{width:100px}
+    #teamcolumndiv .element-input label.input-title.double-text,
+    #teamcolumndiv .element-input label.input-title.double-text:after{width:72px}
+    #teamcolumndiv .element-input input[type=text].in_double_one{width:150px;margin-left:10px;font-size:12px}
+    #teamcolumndiv .element-input input[type=text].in_double_two{width:160px;font-size:12px;margin-top:5px}
+    #add_new_team .element-input table tr.team-header,
+    #add_new_team .element-input table tr.team-input{max-width:413px}
+    #add_new_team .wp-picker-container.wp-picker-active .wp-picker-holder{position:relative;left:-121px}
+    #teamcolumndiv .element-input .rwctm-uploader input.medium{width:170px}
+}
+@media only screen and (max-width:1199px) and (min-width:1024px){
+    #add_new_team .team_list table tbody td.team_name{width:410px}
+    #add_new_team .team_list table tbody td.team_name #set_team,
+    #add_new_team .team_list table tbody td input.rwctm_shortcode{font-size:14px}
+    #add_new_team .team_list table tbody td.team_name span{font-size: 12px}
+    #add_new_team .team_list table tbody td.shortcode{width:290px}
+    #add_new_team .team_list table tbody td .temp_choice{width:124px}
+    #add_new_team .team_list table tbody td .temp_choice select{font-size:14px;padding-left:5px}
+    #add_new_team #teamactivitydiv tr.activitybody td input[type="text"]{max-width:102px}
+    #add_new_team #teamactivitydiv tr.activitybody td input[type="text"],
+    #add_new_team #teamactivitydiv tr.activitybody td > span{font-size:12px;padding:5px 8px}
+    #add_new_team #teamactivitydiv tr.activitybody td input[type="text"][name="awesome_icon[]"]{max-width:148px;width:148px}
+    #teamcolumndiv .member_details{width:354px}
+    #teamcolumndiv .element-input{width:331px;padding:10px 5px!important}
+    #teamcolumndiv .element-input label.input-title,
+    #add_new_team .element-input label.input-check,
+    #teamcolumndiv .element-input label.input-title-check,
+    #settingcolumndiv .advance-input label.input-radio{padding:10px;width:310px}
+    #add_new_team .element-input input.medium,
+    #teamcolumndiv .element-input input.in_small{width:315px;margin-left:8px}
+    #teamcolumndiv .element-input hr,
+    #teamcolumndiv .element-input label.input-title.double-text:after{width:320px}
+    #teamcolumndiv .element-input label.input-title.mb-section,
+    #teamcolumndiv .element-input label.input-title.mb-status{width:92%}
+    #teamcolumndiv .element-input label.input-title.mb-section .rwctm_tooltip,
+    #teamcolumndiv .element-input label.input-title.mb-status .rwctm_tooltip{margin-top:9px}
+    #add_new_team .element-input .selectize-control.single,
+    #add_new_team .element-input .selectize-control.multi{width:315px;margin:0;padding:0 8px}
+    #teamcolumndiv .element-input input[type=text].in_small{margin-bottom:0}
+    #teamcolumndiv .element-input input[type=number].in_small{width:220px;margin-bottom:0}
+    #teamcolumndiv .element-input input[type=text].in_double_one{width:315px;margin:0 9px;border-radius:5px;border:1px solid #ccc;border-bottom-left-radius:0;border-bottom-right-radius:0}
+    #teamcolumndiv .element-input input[type=text].in_double_two{width:315px;margin:0 9px;border-top:0;border-radius:5px;border-top-left-radius:0;border-top-right-radius:0}
+    #add_new_team .element-input table tr.team-input th{width:325px;display:block}
+    #add_new_team .element-input table tr.team-input .input-title{padding:0 10px}
+    #add_new_team #settingcommon .ui-tabs .ui-tabs-nav li{margin:3px 1px -1px;font-size:13px}
+    #add_new_team #settingcommon .cs-inactive,
+    #add_new_team #settingcommon .cs-active{height:35px;line-height:35px;top:27px}
+    #add_new_team #settingcommon .team-input #max-column .selectize-control.single{width:140px}
+    #add_new_team #settingcommon .team-input .team_options .layout-style{width:60%}
+}
+@media only screen and (max-width:1023px) and (min-width:961px){
+    #add_new_team .team_list table tbody td.team_name{width:410px}
+    #add_new_team .team_list table tbody td.team_name #set_team,
+    #add_new_team .team_list table tbody td input.rwctm_shortcode{font-size:12px}
+    #add_new_team .team_list table tbody td.team_name span{font-size: 10px}
+    #add_new_team .team_list table tbody td.shortcode{width:230px}
+    #add_new_team .team_list table tbody td .temp_choice{width:112px}
+    #add_new_team .team_list table tbody td .temp_choice select{font-size:12px;padding-left:5px}
+    #add_new_team .team_list table tbody td.rwctm-status .status{width:30px!important;height:30px;top:-3px;left:50%;font-size:0;padding-right:0!important;transform:translateX(-50%)}
+    #add_new_team .team_list table tbody td span.status:after{top:10px}
+    #add_new_team #teamactivitydiv tr.activitybody td input[type="text"]{max-width:80px}
+    #add_new_team #teamactivitydiv tr.activitybody td input[type="text"],
+    #add_new_team #teamactivitydiv tr.activitybody td > span{font-size:12px;padding:5px 3px}
+    #add_new_team #teamactivitydiv tr.activitybody td input[type="text"][name="awesome_icon[]"]{max-width:148px;width:148px}
+    #add_new_team #settingcommon .ui-tabs .ui-tabs-nav li{margin:3px 1px -1px;font-size:12px}
+    #add_new_team #settingcommon .cs-inactive,
+    #add_new_team #settingcommon .cs-active{height:32px;line-height:32px;top:27px;right:25px}
+    #add_new_team #settingcommon .team-input #max-column .selectize-control.single{width:124px}
+    #add_new_team #settingcommon .team-input .team_options .layout-style{width:60%}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote p{position:relative;margin:190px 0 0;padding:0;font-size:.5rem}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote .blockquote-author-image{width:90%;height:53%;background-size:cover;background-position:12px -143px}
+    #rwctm-sidebar.code{width:33%}
+}
+@media only screen and (max-width:960px)  and (min-width:783px){
+    #add_new_team .team_list table thead th{font-size:14px}
+    #add_new_team .team_list table thead th:last-child{padding-left:0}
+    #add_new_team .team_list table tbody td.team_name{width:410px}
+    #add_new_team .team_list table tbody td.team_name #set_team,
+    #add_new_team .team_list table tbody td input.rwctm_shortcode{font-size:12px}
+    #add_new_team .team_list table tbody td.team_name span{font-size: 10px}
+    #add_new_team .team_list table tbody td.shortcode{width:250px}
+    #add_new_team .team_list table tbody td .temp_choice{width:110px}
+    #add_new_team .team_list table tbody td .temp_choice select{font-size:12px;padding-left:5px}
+    #add_new_team .team_list table tbody td.rwctm-status .status{width:20px!important;height:20px;top:-3px;left:50%;font-size:0;padding-right:0!important;transform:translateX(-50%)}
+    #add_new_team .team_list table tbody td span.status:after{top:5px;left:5px}
+    #add_new_team #teamactivitydiv tr.activitybody td input[type="text"]{max-width:100%;width:100%}
+    #add_new_team #teamactivitydiv tr.activitybody td input[type="text"],
+    #add_new_team #teamactivitydiv tr.activitybody td > span{display:block;border-radius: 5px 5px 0 0!important;font-size:12px;padding:5px 3px}
+    #add_new_team #teamactivitydiv tr.activitybody td input[type="text"]{border-radius:0 0 5px 5px!important;margin:0!important}
+    #add_new_team #teamactivitydiv tr.activitybody td:nth-of-type(3) input[type="text"][name="awesome_icon[]"]{border-radius: 5px 5px 0 0!important}
+    #add_new_team #teamactivitydiv tr.activitybody td:nth-of-type(3) > span{border-radius:0 0 5px 5px!important;margin-left:0!important}
+    #add_new_team #settingcommon .ui-tabs .ui-tabs-nav li{margin:3px 1px -1px;font-size:12px}
+    #add_new_team #settingcommon .ui-tabs .ui-tabs-nav li a{padding:0.7em 0.76em}
+    #add_new_team #settingcommon .cs-inactive,
+    #add_new_team #settingcommon .cs-active{height:32px;line-height:32px;top:27px;right:25px}
+    #add_new_team #settingcommon .team-input #max-column .selectize-control.single{width:105px}
+    #add_new_team #settingcommon .team-input .team_options .layout-style{width:60%}
+    #add_new_team #settingcommon .team-input label.labelexpanded{width:30%}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote p{position:relative;margin:190px 0 0;padding:0;font-size:.5rem}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote .blockquote-author-image{width:90%;height:50%;background-size:cover;background-position:12px -173px}
+    #rwctm-sidebar.code{width:33%}
+}
+@media only screen and (max-width:782px){
+    /* Not checked yet */
+    #add_new_team h2 a.add-new-h2{padding:0 10px}
+    #add_new_team .team_list table#rwctm_list tbody.team_todo{margin-bottom:0;display:grid}
+    #add_new_team .team_list table#rwctm_list tbody.team_todo:last-child{margin-bottom:-9px	}
+    #add_new_team .team_list table tbody.team_todo tr{border-bottom-width:0}
+    #add_new_team .team_list table#rwctm_list .team_todo td{border:none;border-bottom:1px solid #eee;position:relative;padding:0;padding-left:38%;text-align:left;height:40px;line-height:40px}
+    #add_new_team .team_list table#rwctm_list .team_todo td:before{position:absolute;top:0;left:0;width:32%;height:40px;padding-right:10px;text-align:right;background:#2271b1;color:#fff;white-space:nowrap}
+    #add_new_team .team_list table#rwctm_list .team_todo td.team_name:before{height:50px}
+    #add_new_team .team_list table#rwctm_list .team_todo td:nth-of-type(1):before{content:"ID:"}
+    #add_new_team .team_list table#rwctm_list .team_todo td:nth-of-type(2):before{content:"Team Name:"}
+    #add_new_team .team_list table#rwctm_list .team_todo td:nth-of-type(3):before{content:"Shortcode:"}
+    #add_new_team .team_list table#rwctm_list .team_todo td:nth-of-type(4):before{content:"Template:"}
+    #add_new_team .team_list table#rwctm_list .team_todo td:nth-of-type(5):before{content:"Status:"}
+    #add_new_team .team_list table#rwctm_list .team_todo td:last-child{border-bottom:0}
+    #add_new_team .team_list table#rwctm_list .team_todo td:nth-of-type(1),
+    #add_new_team .team_list table#rwctm_list .team_todo td:nth-of-type(2),
+    #add_new_team .team_list table#rwctm_list .team_todo td:nth-of-type(3),
+    #add_new_team .team_list table#rwctm_list .team_todo td:nth-of-type(4),
+    #add_new_team .team_list table#rwctm_list .team_todo td:nth-of-type(5){display:block;width:61.6%;font-weight:bold;color:#32373c}
+    #add_new_team .team_list table#rwctm_list .team_todo .team_name{height:50px}
+    #add_new_team .team_list table tbody td.team_name span{padding:0;height:32px}
+    #add_new_team .team_list table tbody td.team_name span#process_team:after{border:none}
+    #add_new_team .team_list table tbody td #copy_team.duplicate_team{top:15px}
+    #add_new_team .team_list table tbody td.team_name div{position:relative;top:-5px;font-size:14px}
+    #add_new_team .team_list table tbody td.team_name span{font-size:8px;font-weight:400;position:relative;top:-30px;margin-left:0;padding-left:2px;border:none}
+    #add_new_team .team_list table tbody td.team_name span#remTeam{position:absolute;right:23px;top:-41px}
+    #add_new_team .team_list table tbody td .ot_tooltip{top:0}
+    #add_new_team .team_list table tbody td input.rwctm_shortcode{min-height:10px;line-height:1;border-bottom-width:1px;font-size:14px}
+    #add_new_team .team_list table tbody td .temp_choice{height:2.2em;line-height:2.2;top:2px}
+    #add_new_team .team_list table tbody td .temp_choice select{font-size:12px;min-height:26px;line-height:22px;margin:0;padding:0 7px;border-bottom-width:1px}
+    #add_new_team .team_list table tbody td .temp_choice::after{font-size:23px;top:-7px;height:39px}
+    #add_new_team .team_list table tbody td span.status{height:21px;line-height:20px;font-size:15px}
+    #add_new_team .team_list table tbody td span.status:after{top:5px}
+    #add_new_team #teamactivitydiv tr.activitybody td > span{display:none}
+    #add_new_team #teamactivitydiv table#activity_edititem{border:none}
+    #add_new_team .team_list table#rwctm_list thead,
+	#add_new_team #teamactivitydiv table#activity_edititem thead{display:none}
+	/* Activity - */
+    #add_new_team .team_list table tbody tr{display:block;margin-bottom:20px}
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody{margin-bottom:20px;display:block}
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td{border:none;border-right:1px solid #ddd;position:relative;margin:0;padding:0;padding-left:37%;text-align:left;height:44px;line-height:43px}
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td input,
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td select#activity_type{margin:0;padding:9px 6px 7px;font-size:14px;font-weight:400;border-radius:0;width:100%;border-right:0}
+    #add_new_team #teamactivitydiv tr.activitybody td .select{margin:5px 6px 6px;width:90%}
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td:nth-of-type(4){border-bottom:1px solid #dddd}
+    #add_new_team #teamactivitydiv tr.activitybody td .select .options{width:100%}
+	#add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td select#activity_type{padding:9px 6px}
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td::before{position:absolute;top:0;left:1px;width:34%;height:43px;padding-right:10px;text-align:right;background:#22313f;color:#ffffff;white-space:nowrap}
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td:nth-of-type(1):before{content:"Name:"}
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td:nth-of-type(2):before{content:"URL:"}
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td:nth-of-type(3):before{content:"Icon:"}
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td:nth-of-type(4):before{content:"Type:"}
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td:nth-of-type(5):before{content:"Actions:"}
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td:nth-of-type(1),
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td:nth-of-type(2),
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td:nth-of-type(3),
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td:nth-of-type(4),
+    #add_new_team #teamactivitydiv table#activity_edititem tr.activitybody td:nth-of-type(5){display:block;width:62%;font-weight:bold;color:#32373c}
+    #add_new_team .team_list p.activity_notice{font-size:12px;bottom:26px;left:63%;width:55%}
+	/* Member Options */
+    #add_new_team .element-input table tr td{display:table-cell}
+    #add_new_team .wp-picker-container .wp-color-result.button.wp-color-result.wp-picker-open{padding:0 0 0 30px}
+    #add_new_team .wp-picker-container .wp-color-result.button.wp-color-result.wp-picker-open span{padding:0 6px}
+    /* Settings */
+    #add_new_team #settingcommon .ui-tabs .ui-tabs-nav li{width:99px;margin-top:7px;font-size:13px}
+    #add_new_team #settingcommon .ui-tabs .ui-tabs-nav li a{width:74px}
+    #add_new_team #settingcommon .cs-inactive,
+    #add_new_team #settingcommon .cs-active{height:35px;line-height:35px;top:74px;right:30px}
+    #add_new_team #settingcommon .team-input span.check_note,
+    #add_new_team #settingcommon .team-input .image_size span.input_note{width:300px;left:0;top:100%;line-height:18px;font-size:9px}
+    #add_new_team #settingcommon .team-input span.input_note,
+    #add_new_team #settingcommon .team-input span.check_note{left:0;top:104%}
+    #add_new_team #settingcommon .team-input .image_size span.input_note{left:265px}
+    #add_new_team #settingcommon .team-input input.medium,
+    #add_new_team #settingcommon .team-input textarea.medium{width:275px}
+    #add_new_team #settingcommon .team-input .selectize-control.single{width:160px}
+    #add_new_team #settingcommon .team-input .tmname_margin label.label-check,
+    #add_new_team #settingcommon .team-input .team_options.tm_name_font label.label-check,
+    #add_new_team #settingcommon .team-input .team_options.nav_font_size label.label-check,
+    #add_new_team #settingcommon .team-input .team_options.mn_thumb_font label.label-check,
+    #add_new_team #settingcommon .team-input .team_options.dp_thumb_font label.label-check,
+    #add_new_team #settingcommon .team-input .team_options.dg_thumb_font label.label-check,
+    #add_new_team #settingcommon .team-input .team_options.bio_thumb_fnt label.label-check,
+    #add_new_team #settingcommon .team-input .team_options.sm_thumb_font label.label-check{display:block}
+    #add_new_team #settingcommon .team-input .team_options.tm_name_font,
+    #add_new_team #settingcommon .team-input .team_options.nav_font_size,
+    #add_new_team #settingcommon .team-input .team_options.mn_thumb_font,
+    #add_new_team #settingcommon .team-input .team_options.dp_thumb_font,
+    #add_new_team #settingcommon .team-input .team_options.dg_thumb_font,
+    #add_new_team #settingcommon .team-input .team_options.bio_thumb_fnt,
+    #add_new_team #settingcommon .team-input .team_options.sm_thumb_font,
+    #add_new_team #settingcommon .team-input .team_options.tmname_margin{padding-top:0}
+    #add_new_team #settingcommon .team-input .team_options .label-check.numgroup{position:relative;display:inline-block;width:224px}
+    #add_new_team #settingcommon .team-input input[type=number].medium{width:100px}
+    #add_new_team #settingcommon .team-input input.tickbox{float:right;top:10px}
+    #add_new_team #settingcommon .team-input .team_options.enable_image .check_note{top:80%;left:0}
+    #add_new_team #settingcommon .team-input #max-column h4{width:100%}
+    #add_new_team #settingcommon .team-input #max-column .team_options{margin:0 15px 30px 0}
+    #add_new_team #settingcommon .team-input #max-column .selectize-control.single{width:130px}
+    #add_new_team #settingcommon .team-input .marked_layout .label-check,
+    #add_new_team #settingcommon .team-input .layout_style .label-check{top:0}
+    #add_new_team #settingcommon .team-input .team_options .layout-style{width:70%}
+    #add_new_team #settingcommon .team-input label.labelexpanded{width:30%}
+    #add_new_team #settingcommon .team-input .team_options.tm_name_font .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.nav_font_size .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.mn_thumb_font .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.dp_thumb_font .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.dg_thumb_font .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.bio_thumb_fnt .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.sm_thumb_font .label-check.numgroup{display:inline}
+    #add_new_team #settingcommon .team-input .tm_name_font span.input_note,
+    #add_new_team #settingcommon .team-input .nav_font_size span.input_note,
+    #add_new_team #settingcommon .team-input .mn_thumb_font span.input_note,
+    #add_new_team #settingcommon .team-input .dp_thumb_font span.input_note,
+    #add_new_team #settingcommon .team-input .dg_thumb_font span.input_note,
+    #add_new_team #settingcommon .team-input .bio_thumb_fnt span.input_note,
+    #add_new_team #settingcommon .team-input .sm_thumb_font span.input_note{position:relative;top:15px;left:5px;display:block}
+    #add_new_team #settingcommon .team-input input.medium.rwctm-color-picker{width:100%}
+    /* Not checked yet */
+    .template-container .template-items{width:32%;margin:0 1% 1% 0}
+    .template-container .template-items .template-actions .button-secondary{min-height:20px;padding:0 14px;line-height:2}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote p{font-size: 12px}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote cite{margin-top:0}
+    #rwctm_global_settings .rwctm_global.ui-widget.ui-widget-content{width:96.5%;margin:0;padding:20px 5px}
+    #rwctm_global_settings .ui-tabs .ui-tabs-nav li{margin:0 1px!important;padding:0!important}
+    #rwctm_global_settings .ui-tabs .ui-tabs-nav .ui-tabs-anchor{padding:5px!important;font-size:12px!important}
+    #rwctm_global_settings .ui-tabs .ui-tabs-panel{padding:0 10px!important}
+    .rwctm_global label.input-check,.rwctm_global label.input-title{width:78%;font-size:12px;height:18px;line-height:10px;padding:9px 0}
+    .rwctm_global label.rwctm_global_check input[type=checkbox]{width:15px;height:15px}
+    .rwctm_global #user_choice_font{padding:10px 9px 10px 5px}
+    #rwctm_global_settings a.rwctm_tooltip:hover:after{top:26px;left:-170px;width:calc(100% + 280px)!important}
+    #rwctm_global_settings a.rwctm_tooltip:hover:before{top:7px;left:-3px;border-color:transparent transparent #aaa}
+    #rwctm_global_settings a.rwctm_tooltip.rwctm_note:hover:after{padding:27px 10px 10px;font-size:12px;top:30px;left:-195px;line-height:20px}
+    #rwctm_global_settings a.rwctm_tooltip.rwctm_note::before{top:11px!important}
+    #rwctm_global_settings a.rwctm_tooltip.rwctm_note:hover i.attention::after{left:-184px;top:34px}
+    #add_new_team .team_list p.get_started,#add_new_team .team_list p.rwctm_notice,#rwctm_global_settings .rwctm_global .rwctm_custom_css p.get_started{width:85%;font-size:12px;padding:15px}
+    #add_new_team .team_list p.rwctm_notice{padding:5px}
+    #add_new_team input#rwctm_add_new, #add_new_team #rwctm_upfeature,
+    #add_new_team #rwctm_addfeature{position:relative;top:-50px}
+    .wrap .rwctm_guide.postbox-container{width:100%!important}
+    .wrap .rwctm_guide.postbox-container .rwctmusage-maincontent{padding:0}
+    #rwctm-narration{width:100%;margin-bottom:0}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent{padding-bottom:0;padding-right:0}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm,
+    #rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar .rwctm{padding:10px}
+    .rwctmusage-maincontent .rwctm p,
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm .likeit{font-size:12px}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote{margin:25px 0}
+    #rwctm-sidebar.code,#rwctm-sidebar.code.rwctm-tools{width:100%;margin:0}
+    #rwctm-sidebar.code.rwctm-tools{margin-top:20px}
+    #rwctm-sidebar.tools{width:100%;margin:10px 0 0}
+    #rwctm-sidebar{width:100%}
+    #rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar,
+    #rwctm-sidebar #rwctmusage-info.rwctmusage-sidebar{max-width:100%}
+    .postbox-container.rwctm-guide{width:100%!important}
+    .rwctm-guide .rwctmusage-maincontent{padding:0}
+    .rwctm-guide .rwctmusage-maincontent .inside .getting-started_video{display:flex}
+	#rwctm-sidebar{width:100%}
+    #rwctm-sidebar.code .rwctmusage-sidebar h3{font-size:20px}
+	#rwctm-sidebar #rwctmusage-note.rwctmusage-sidebar,
+    #rwctm-sidebar #rwctmusage-info.rwctmusage-sidebar{max-width:100%;padding:10px}
+}
+@media only screen and (max-width:640px){
+    #add_new_team{overflow:hidden}
+    #add_new_team .team_list #rwctm_list{display:block}
+    #add_new_team .teamactivitywrap{padding:0}
+    #add_new_team .teamcolumnwrap{padding:0 3px 0 4px;margin:0}
+    #teamcolumndiv #addButtons{left:5px}
+    #teamcolumndiv #addButtons a#addMember{position:relative;min-height:30px}
+    #teamcolumndiv .accordion-expand-holder{right:10px;top:43px}
+    #teamcolumndiv #sortable_column{margin:0}
+    #teamcolumndiv .member_details{width:426px}
+    #teamcolumndiv #sortable_column .member_details h3.mtitle{width:378px;font-size:13px;height:24px;line-height:24px}
+    #teamcolumndiv .element-input{width:402px;top:4px}
+    #teamcolumndiv .element-input label.input-title,
+    #add_new_team .element-input label.input-check,
+    #teamcolumndiv .element-input label.input-title-check{padding:0 10px 10px;width:385px}
+    #teamcolumndiv .element-input hr,
+    #teamcolumndiv .element-input label.input-title.double-text:after{width:385px}
+    #teamcolumndiv .element-input input.medium,
+    #teamcolumndiv .element-input textarea[id=member_desc],
+    #teamcolumndiv .element-input textarea[id=short_bio],
+    #teamcolumndiv .element-input textarea[id=tag_line],
+    #add_new_team #settingcommon .team-input textarea.medium{margin-left:9px;width:385px}
+    #add_new_team #settingcommon .team-input textarea.medium{margin-left:0}
+    #add_new_team #settingcommon .team-input .image_size span.input_note{left:0}
+    #add_new_team #settingcommon .team-input #img-custom,
+    #add_new_team #settingcommon .team-input #slider-apspeed{margin-top:0}
+    #add_new_team #settingcommon .team-input .marked_layout .input_note,
+    #add_new_team #settingcommon .team-input .layout_style .input_note{bottom:-70px}
+    #add_new_team #settingcommon .team-input .team_options.enable_filter span.check_note{top:84%}
+    #add_new_team #settingcommon .team-input h4{padding-top:20px}
+    #teamcolumndiv .element-input label.input-title.mb-section,
+    #teamcolumndiv .element-input label.input-title.mb-status{width:92%}
+    #add_new_team #teamcolumndiv .element-input label.input-title.mb-section a.rwctm_tooltip::before,
+    #add_new_team #teamcolumndiv .element-input label.input-title.mb-status a.rwctm_tooltip::before{top:10px}
+    #add_new_team .element-input .selectize-control.single,
+    #add_new_team .element-input .selectize-control.multi{width:385px;margin:0;padding:0 8px}
+    #teamcolumndiv .element-input input[type=text].in_small{margin-left:9px;width:90px}
+    #teamcolumndiv .element-input input[type=number].in_small{width:200px}
+    #teamcolumndiv .element-input input[type=text].in_double_one{width:385px;margin:0 9px;border-radius:5px;border:1px solid #ccc;border-bottom-left-radius:0;border-bottom-right-radius:0}
+    #teamcolumndiv .element-input input[type=text].in_double_two{width:385px;margin:0 9px;border-top:0;border-radius:5px;border-top-left-radius:0;border-top-right-radius:0}
+    #add_new_team .element-input table tr td:before{display:none}
+    #add_new_team .element-input table tr td{width:40%!important;padding:5px 10px 0!important;height:auto!important;line-height:1.3!important}
+    #add_new_team .ui-accordion .ui-accordion-content a.button-primary.rwctm-upload{margin-left:9px}
+    #add_new_team #settingcommon{margin:60px 0 15px;padding:0 5px}
+	#add_new_team #settingcommon .ui-widget.ui-widget-content{padding:0}
+	#add_new_team #settingcommon .cs-inactive,
+	#add_new_team #settingcommon .cs-active{top:-40px;right:5px}
+	#rwctm_global_settings .ui-tabs .ui-tabs-nav,
+	#settingcommon .ui-tabs .ui-tabs-nav{padding:0}
+	#add_new_team #settingcommon .ui-tabs .ui-tabs-nav li{width:32%;max-width:103px;margin:1px;padding-bottom:1px}
+    #add_new_team #settingcommon .ui-tabs .ui-tabs-nav li a{width:75px}
+    #add_new_team #settingcommon .team-input .team_options.tm_name_font .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.nav_font_size .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.mn_thumb_font .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.dp_thumb_font .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.dg_thumb_font .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.bio_thumb_fnt .label-check.numgroup,
+    #add_new_team #settingcommon .team-input .team_options.sm_thumb_font .label-check.numgroup{display:inline-block}
+    #add_new_team #settingcommon .team-input label.label-title,
+    #add_new_team #settingcommon .team-input label.label-check{width:218px}
+    #add_new_team #settingcommon .team-input .team_options .label-check.numgroup{width:174px}
+    #add_new_team #settingcommon .team-input #slider-option label.label-check{width:160px}
+    #add_new_team #settingcommon .team-input .team_options .label-check.numgroup{position:relative;top:0;padding:0 0 3px}
+    #add_new_team #settingcommon .team-input input.medium{margin-bottom:10px}
+    #add_new_team #settingcommon .team-input .team_options.tm_name_font,
+    #add_new_team #settingcommon .team-input .team_options.nav_font_size,
+    #add_new_team #settingcommon .team-input .team_options.mn_thumb_font,
+    #add_new_team #settingcommon .team-input .team_options.dp_thumb_font,
+    #add_new_team #settingcommon .team-input .team_options.dg_thumb_font,
+    #add_new_team #settingcommon .team-input .team_options.bio_thumb_fnt,
+    #add_new_team #settingcommon .team-input .team_options.sm_thumb_font,
+    #add_new_team #settingcommon .team-input .team_options.tmname_margin{padding-top:0;margin-bottom:10px}
+    #add_new_team #settingcommon .team-input .rwctm_notice{width:232px;margin-left:0}
+    #add_new_team #settingcommon .team-input .selectize-control.single{width:242px}
+    #add_new_team #settingcommon .team-input #img-features::before,
+    #add_new_team #settingcommon .team-input #filter-nav::before,
+    #add_new_team #settingcommon .team-input #img-custom::before,
+    #add_new_team #settingcommon .team-input #slider-apspeed::before,
+    #add_new_team #settingcommon .team-input .image_margin::before{left:unset;right:0}
+    #add_new_team #settingcommon .team-input #img-custom .rwctm_notice{width:90%;margin-left:-12px;margin-top:42px}
+    #add_new_team #settingcommon .team-input .marked_layout .label-check,
+    #add_new_team #settingcommon .team-input .layout_style .label-check{top:-10px}
+    #add_new_team #settingcommon .team-input .team_options .layout-style{width:300px;margin:0}
+    #add_new_team #settingcommon .team-input label.labelexpanded{width:33%}
+    #add_new_team #settingcommon .team-input .team_options.thumb_desig,
+    #add_new_team #settingcommon .team-input .team_options.thumb_depart,
+    #add_new_team #settingcommon .team-input .team_options.thumb_smicon,
+    #add_new_team #settingcommon .team-input .team_options.member_desig,
+    #add_new_team #settingcommon .team-input .team_options.member_depart,
+    #add_new_team #settingcommon .team-input .team_options.member_smicon{margin-bottom:30px}
+    #add_new_team #settingcommon .team-input input[type=text],
+    #add_new_team #settingcommon .team-input input.medium{width:95%;margin:0}
+	/* Adjust tab content for smaller screens */
+	#add_new_team .ui-tabs-panel{
+	padding:10px; /* Modify padding as needed */
+	}
+	#add_team_template .template-container .template-items{width:100%;margin-right:0}
+	#add_team_template .template-container .template-items:nth-child(2n),
+    #add_team_template .template-container .template-items:nth-child(3n){margin-right:0}
+}
+@media only screen and (max-width:480px){
+    #add_new_team{overflow:hidden}
+    #add_new_team #teamactivitydiv tr.activitybody td > span{display:none}
+    #add_new_team .teamactivitywrap{padding:0}
+    #teamcolumndiv .member_details{width:308px}
+    #teamcolumndiv #sortable_column .member_details h3.mtitle,
+    #teamcolumndiv .element-input hr,
+    #teamcolumndiv .element-input label.input-title.double-text:after,
+    #teamcolumndiv .element-input input.medium,
+    #teamcolumndiv .element-input textarea[id=member_desc],
+    #teamcolumndiv .element-input textarea[id=short_bio],
+    #teamcolumndiv .element-input textarea[id=tag_line],
+    #add_new_team #settingcommon .team-input textarea.medium{width:260px}
+    #teamcolumndiv .element-input{width:284px}
+    #teamcolumndiv .element-input label.input-title,
+    #add_new_team .element-input label.input-check,
+    #teamcolumndiv .element-input label.input-title-check{width:255px}
+    #add_new_team .element-input .selectize-control.single,
+    #add_new_team .element-input .selectize-control.multi{width:262px}
+    #teamcolumndiv .element-input input[type=text].in_small{width:70px}
+    #teamcolumndiv .element-input input[type=number].in_small{width:167px}
+    #teamcolumndiv .element-input input[type=text].in_double_one,
+    #teamcolumndiv .element-input input[type=text].in_double_two{width:266px}
+    #add_new_team .element-input table tr td:before{display:none}
+    #add_new_team .element-input table tr td{width:60%!important}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote{padding-left:15px;padding-right:15px}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote p{position:relative;margin:206px 0 0;padding:0;font-size:12px}
+    #rwctm-narration #rwctmusage-note.rwctmusage-maincontent .rwctm blockquote .blockquote-author-image{width:92%;height:48%;background-size:contain;background-position:0}
+}
+/* //Responsive */
